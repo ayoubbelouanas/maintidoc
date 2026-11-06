@@ -7,11 +7,3 @@
 __pycache__/
 .venv/
 node_modules/
-# Sources fabricants et rendus : locaux, droits de redistribution non établis
-corpus/documents/**/*.pdf
-!corpus/documents/serveurs/dell_revue_dossier_v1.pdf
-!corpus/documents/serveurs/dell_revue_dossier_v2.pdf
-!corpus/documents/fours/rational_note_suivi_injection_s5.pdf
-corpus/images/**/*.png
-corpus/images/**/*.jpg
-corpus/images/**/*.jpeg

@@ -23,17 +23,17 @@ maintidoc/
 ```
 
 Les quatre schémas sont dans [docs/diagrammes/](docs/diagrammes/).
-L'[inventaire](corpus/inventaire.csv) décrit les 36 PDF du corpus local, avec leurs chemins exacts, sources, droits et usages de test. Le [journal des prompts](corpus/prompts_corpus.md) conserve les interventions de l'IA et l'historique des corrections.
+L'[inventaire](corpus/inventaire.csv) décrit les 36 PDF du dépôt, avec leurs chemins exacts, sources, droits et usages de test. Le [journal des prompts](corpus/prompts_corpus.md) conserve les interventions de l'IA et l'historique des corrections.
 
 ## Corpus et disponibilité dans ce dépôt
 
-Le corpus local comporte **33 PDF fabricants et 3 PDF synthétiques de test S5** :
+Le dépôt comporte **33 PDF fabricants et 3 PDF synthétiques de test S5** :
 - **fours** : 20 notices RATIONAL (iCombi Pro, iCombi Classic, SelfCookingCenter, iHexagon) et une note piégée synthétique ;
 - **serveurs** : 13 PDF Dell PowerEdge/PERC 9 et deux versions synthétiques d'une procédure de revue documentaire.
 
 Les 13 PDF Dell sont en anglais. Le système devra répondre en français par défaut, à partir de preuves françaises ou anglaises, et en anglais sur demande, en conservant les codes, unités et citations des pages originales.
 
-Les trois PDF de test originaux sont publiés ici. **Les 33 PDF fabricants et les 25 aperçus PNG restent locaux : aucune permission générale de redistribution n'est établie.** Le champ `provenance` de l'inventaire indique les sources précises. Les chemins fabricant du CSV décrivent les fichiers locaux ; leur absence sur GitHub est volontaire. Le [registre des images](corpus/images/tracabilite_images.csv) conserve la correspondance entre chaque aperçu, le PDF d'origine, sa page physique et ses empreintes. Les aperçus sont des pages illustrées, pas des photographies isolées.
+**Les 36 PDF et les 25 aperçus PNG sont présents dans ce dépôt**, à la demande d'Ayoub, pour le projet pédagogique. Les PDF fabricants proviennent de publications publiques Dell et RATIONAL ; ils conservent leurs mentions de copyright. Leur disponibilité publique ne constitue pas une licence ouverte ; aucune permission générale de redistribution n'est revendiquée. Le champ `provenance` de l'inventaire indique les sources précises et les chemins correspondent aux fichiers publiés. Le [registre des images](corpus/images/tracabilite_images.csv) conserve la correspondance entre chaque aperçu, le PDF d'origine, sa page physique et ses empreintes. Les aperçus sont des pages illustrées, pas des photographies isolées.
 
 ## Accès prévu
 
