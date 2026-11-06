@@ -99,7 +99,7 @@ Objectifs, périmètre et contraintes
 
 | Objectif en semaine 6 | Preuve attendue |
 
-| Réponse fondée | Citations vers document, version, page et figure réellement récupérés ; appui vérifié. |
+| Réponse fondée en français | Réponse française même si la preuve est anglaise ; citation de la source originale, page et appui vérifiés. |
 
 | Image exploitée | Observation distincte des déductions ; clarification si le modèle reste incertain. |
 
@@ -115,7 +115,7 @@ Objectifs, périmètre et contraintes
 
 Entrées, sorties et hors périmètre
 
-Entrées : question en français, photographie, documents PDF. Sorties : réponse sourcée, clarification, refus, brouillon puis ticket approuvé. Outil externe : service MCP fictif de maintenance. Hors périmètre : pilotage d’une machine, diagnostic garanti et intervention autonome.
+Entrées : question en français, photographie, documents PDF. Sorties : réponse sourcée en français par défaut, clarification, refus, brouillon puis ticket approuvé. Une réponse en anglais peut être demandée explicitement. Outil externe : service MCP fictif de maintenance. Hors périmètre : pilotage d’une machine, diagnostic garanti et intervention autonome.
 
 ### Ressources réellement déclarées
 
@@ -156,6 +156,8 @@ Comptage fondé sur les fichiers locaux et leur contenu, pas sur les liens propo
 | Documents synthétiques actifs | 0 | 0 | 0 |
 
 | PDF avec page illustrée relevée | 12 | 13 | 25 |
+
+Langues : les 13 PDF Dell sont en anglais (langue = en dans l’inventaire). Les notices RATIONAL ont le français comme langue principale ; MI_2208 est multilingue avec une section française p.17 à 24. Les sources ne sont pas remplacées par une traduction.
 
 ### Trois ajouts effectivement contrôlés
 
@@ -325,7 +327,7 @@ Fiches des blocs et hypothèses
 
 Points à vérifier en semaines 2 et 3
 
-Fixer les versions et licences des outils ; mesurer mémoire et latence sur la RTX 3080 10 Go ; choisir l’OCR et la stratégie de découpage ; tester embeddings texte et image ; contrôler l’appui sémantique des citations et la reprise après attente d’approbation. L1 n’annonce aucune compatibilité mesurée.
+Fixer les versions et licences des outils ; mesurer mémoire et latence sur la RTX 3080 10 Go ; choisir l’OCR et la stratégie de découpage ; tester embeddings multilingues et recherche d’une preuve anglaise par une question française ; contrôler l’appui sémantique des citations et la reprise après attente d’approbation. L1 n’annonce aucune compatibilité mesurée.
 
 
 
@@ -377,7 +379,7 @@ Requête et contrôle d’accès
 
 Parcours complet
 
-1. L’API authentifie l’utilisateur fictif et obtient ses groupes côté serveur.<br/>2. Le VLM décrit les indices visibles sans attribuer une cause non observée.<br/>3. Si l’équipement n’est pas établi, le workflow demande sa référence avant toute procédure spécifique.<br/>4. Les recherches textuelle et visuelle portent uniquement sur les documents autorisés ; les candidats sont fusionnés et reclassés.<br/>5. Un appel MCP utile consulte l’historique de l’équipement confirmé, après autorisation côté outil.<br/>6. Le VLM rédige une proposition à partir des preuves. Le validateur contrôle document, version, page et appui.<br/>7. L’interface affiche la réponse, les limites et les sources ; leur ouverture déclenche un nouveau contrôle d’accès.
+1. L’API authentifie l’utilisateur fictif et obtient ses groupes côté serveur.<br/>2. Le VLM décrit les indices visibles sans attribuer une cause non observée.<br/>3. Si l’équipement n’est pas établi, le workflow demande sa référence avant toute procédure spécifique.<br/>4. Les recherches textuelle et visuelle portent uniquement sur les documents autorisés ; les candidats sont fusionnés et reclassés.<br/>5. Un appel MCP utile consulte l’historique de l’équipement confirmé, après autorisation côté outil.<br/>6. Le VLM formule la réponse en français par défaut à partir des preuves françaises ou anglaises. Codes, références de pièces et unités restent inchangés. Le validateur contrôle la source originale, sa version, sa page et son appui.<br/>7. L’interface affiche la réponse, les limites et les sources ; leur ouverture déclenche un nouveau contrôle d’accès.
 
 | Groupe | Périmètre autorisé |
 
@@ -507,7 +509,7 @@ Responsabilités et semaines 2 à 6
 
 Évaluation prévue
 
-Définir en S5 les seuils et jeux de test. Mesurer nDCG@5 et MRR@10 pour le classement, qualité de l’appui documentaire, refus intergroupes, résistance aux injections et absence de création non approuvée. Rapporter les résultats même si le fine-tuning n’améliore pas le classement.
+Définir en S5 les seuils et jeux de test. Mesurer nDCG@5 et MRR@10 pour le classement, appui documentaire et qualité des réponses françaises issues de sources anglaises. Tester aussi refus intergroupes, injections et absence de ticket non approuvé. Rapporter les résultats même si le fine-tuning n’améliore pas le classement.
 
 Les scans, paires contradictoires et documents piégés restent à constituer et à réserver aux tests. Les ambiguïtés de modèle seront testées avec des sources adéquates. Les images et textes tiers ne sont pas utilisés pour entraîner le modèle vision-langage, qui reste inchangé.
 

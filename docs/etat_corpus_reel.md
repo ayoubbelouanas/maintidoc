@@ -57,3 +57,8 @@
 Les 33 fichiers sont présents et contrôlés techniquement. L’inventaire UTF-8 contient les vingt colonnes demandées et une ligne par PDF. Les champs verifie_par restent vides sans validation explicite d’Ayoub. Les fichiers conservent leur copyright fabricant ; aucune licence ouverte ni autorisation générale de redistribution n’est établie.
 
 25 pages illustrées sont rendues en PNG et reliées à leurs sources dans images/tracabilite_images.csv. Ce ne sont pas des documents supplémentaires. Aucun scan source, document piégé ou paire contradictoire de documents n’est validé dans le lot réel actuel : ces exigences L1 restent à traiter, sans réintroduire automatiquement le lot synthétique rejeté.
+
+
+## Politique linguistique
+
+Les 13 PDF Dell sont en anglais (langue = en). Les réponses seront en français par défaut, avec explication ou traduction à partir des preuves anglaises et citations vers les pages originales ; codes, références et unités sont conservés. Voir politique_langues.md. Validation bilingue prévue pendant les tests.

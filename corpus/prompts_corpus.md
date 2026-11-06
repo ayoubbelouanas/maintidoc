@@ -164,3 +164,12 @@ de redistribution de ces documents.
 - Séries : iCombi Pro, iCombi Classic, SelfCookingCenter et iHexagon ; treize désignations de serveurs Dell (dix manuels dont R720/R720xd, plus le guide R730/R730xd). PERC 9 est un composant partagé, pas un serveur.
 - Visuels : 25 rendus PNG de pages illustrées (12 notices RATIONAL et 13 documents Dell), dans images/fours/ et images/serveurs/. Ce ne sont pas des photographies isolées. CSV et JSON lient PDF, page, source et empreintes. Les PDF originaux ne sont pas modifiés ni amputés de leurs pages blanches.
 - Limites : pas de scan source identifié, pas d’injection ni de paire contradictoire interdocumentaire validée dans ce lot. Les divergences de vocabulaire de notices iHexagon sont signalées sans corriger le PDF. Les droits de redistribution et la relecture humaine restent à établir.
+
+
+## P13 — Sources anglaises et réponse française
+
+- Date : 6 novembre 2026 ; outil : Codex.
+- Demande utilisateur : signaler que les PDF Dell sont en anglais et expliquer si l’assistant peut répondre en français.
+- Vérification : les treize lignes Dell ont langue = en ; aucun PDF n’a été traduit ou modifié.
+- Comportement cible retenu : réponse française par défaut, même avec des preuves anglaises ; anglais sur demande. Conserver codes, messages, références de pièces, unités et nombres. Citer les pages originales ; distinguer explication traduite et citation littérale. Tester la recherche question FR / passage EN et la fidélité de la réponse ; aucun résultat bilingue n’est présumé.
+- Mise à jour : rapport, README, politique_langues.md, flux de requête et synthèse du corpus.

@@ -7,3 +7,8 @@ Le lot contient 33 PDF réels : 20 notices RATIONAL, dix manuels propriétaires 
 Reste à traiter pour le L1 : relecture humaine, conditions de réutilisation du lot, deux scans sources pour OCR, deux documents contradictoires et un document avec injection. Ces exigences ne sont pas déclarées satisfaites par l’ancienne version synthétique rejetée.
 
 Voir etat_corpus_reel.md, corpus_actuel.json et l’inventaire pour les séries, les versions et les chemins réellement présents.
+
+
+## Politique linguistique
+
+Les 13 PDF Dell sont en anglais (langue = en). Les réponses seront en français par défaut, avec explication ou traduction à partir des preuves anglaises et citations vers les pages originales ; codes, références et unités sont conservés. Voir politique_langues.md. Validation bilingue prévue pendant les tests.

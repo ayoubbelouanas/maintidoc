@@ -4,13 +4,13 @@ flowchart TD
     A -->|Oui| V[Analyse visuelle]
     V --> ID{Équipement suffisamment identifié ?}
     ID -->|Non| CL[Demande de précision]
-    ID -->|Oui| R[Recherche textuelle et visuelle filtrée par groupes]
+    ID -->|Oui| R[Recherche multilingue texte-image filtrée par groupes]
     R --> RR[Fusion et reranking des preuves autorisées]
     RR --> M{Historique ou tickets nécessaires ?}
     M -->|Oui| MCP[Appel MCP avec contrôle des droits côté serveur]
-    MCP --> P[Préparation de la réponse avec preuves]
+    MCP --> P[Réponse en français par défaut avec preuves FR ou EN]
     M -->|Non| P
     P --> C{Sources suffisantes, citations existantes et appuyées ?}
     C -->|Non| LIM[Clarification ou limite expliquée]
-    C -->|Oui| OUT[Réponse sourcée]
+    C -->|Oui| OUT[Réponse sourcée : codes et références préservés]
     OUT --> OPEN[Ouverture des sources après contrôle d'accès]

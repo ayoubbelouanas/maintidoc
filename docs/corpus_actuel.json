@@ -830,5 +830,12 @@
       "synthetique": false,
       "page_visuelle": 13
     }
-  ]
+  ],
+  "langues_pdf": {
+    "fr": 20,
+    "en": 13
+  },
+  "langue_reponse_defaut": "fr",
+  "reponse_anglais_sur_demande": true,
+  "validation_bilingue": "prévue, non réalisée"
 }

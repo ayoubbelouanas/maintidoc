@@ -10,6 +10,10 @@ Dépôt : https://github.com/ayoubbelouanas/maintidoc (branche codex/livraison-l
 - RATIONAL : iCombi Pro, iCombi Classic, SelfCookingCenter, iHexagon ; configurations selon chaque notice.
 - Dell : R220, R230, R320, R430, R520, R530, R620, R720, R720xd, R730, R730xd, T320 et T330 ; PERC 9 est un composant partagé.
 
+## Langues
+
+Les 13 PDF Dell sont en anglais ; les notices RATIONAL ont le français comme langue principale, avec MI_2208 multilingue. L’assistant répondra en français par défaut, y compris à partir de sources anglaises, et en anglais sur demande. Les codes, références et unités restent exacts ; les citations renvoient aux pages originales. Ce comportement sera testé, il n’est pas encore mesuré. Voir `docs/politique_langues.md`.
+
 ## Organisation locale
 
 `corpus_reel_candidats/` contient les fichiers ajoutés, inventaire.csv (vingt colonnes), catalogue CSV/JSON et sources précises. `L1_MaintiDoc_BELOUANAS_corpus/` est sa copie synchronisée pour la remise. Les noms des PDF sont conservés exactement. `images/fours/` et `images/serveurs/` contiennent 25 aperçus PNG de pages illustrées, reliés aux PDF dans les registres de traçabilité.
