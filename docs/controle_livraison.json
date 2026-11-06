@@ -1,5 +1,7 @@
 {
   "date": "2026-11-06",
+  "images_associees": 10,
+  "extraction_exacte_images_verifiee": true,
   "documents": 40,
   "colonnes_inventaire": 20,
   "familles": {

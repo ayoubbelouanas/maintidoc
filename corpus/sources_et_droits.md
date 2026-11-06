@@ -9,6 +9,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 ## Photographies réelles livrées
 
 ### fours_photo_01
+- Image extraite du PDF : images/fours/fours_photo_01.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : HORECA15 Rational (1).JPG
 - Auteur : Travelarz
 - Source exacte : https://commons.wikimedia.org/wiki/File:HORECA15_Rational_(1).JPG
@@ -18,6 +19,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### fours_photo_02
+- Image extraite du PDF : images/fours/fours_photo_02.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : HORECA15 Rational 5Senses (1).JPG
 - Auteur : Travelarz
 - Source exacte : https://commons.wikimedia.org/wiki/File:HORECA15_Rational_5Senses_(1).JPG
@@ -27,6 +29,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### fours_photo_03
+- Image extraite du PDF : images/fours/fours_photo_03.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : HORECA15 Rational 5Senses (2).JPG
 - Auteur : Travelarz
 - Source exacte : https://commons.wikimedia.org/wiki/File:HORECA15_Rational_5Senses_(2).JPG
@@ -36,6 +39,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### fours_photo_04
+- Image extraite du PDF : images/fours/fours_photo_04.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : Konvektomat Rational.jpg
 - Auteur : Pohled 111
 - Source exacte : https://commons.wikimedia.org/wiki/File:Konvektomat_Rational.jpg
@@ -45,6 +49,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### fours_photo_05
+- Image extraite du PDF : images/fours/fours_photo_05.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : Konvektomat v kuchyni.jpg
 - Auteur : Pohled 111
 - Source exacte : https://commons.wikimedia.org/wiki/File:Konvektomat_v_kuchyni.jpg
@@ -54,6 +59,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### serveurs_photo_06
+- Image extraite du PDF : images/serveurs/serveurs_photo_06.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : Dell PowerEdge R610 and R720.jpg
 - Auteur : Dell Inc.
 - Source exacte : https://commons.wikimedia.org/wiki/File:Dell_PowerEdge_R610_and_R720.jpg
@@ -63,6 +69,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### serveurs_photo_07
+- Image extraite du PDF : images/serveurs/serveurs_photo_07.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : Dell PowerEdge R610.jpg
 - Auteur : Toni Birrer
 - Source exacte : https://commons.wikimedia.org/wiki/File:Dell_PowerEdge_R610.jpg
@@ -72,6 +79,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### serveurs_photo_08
+- Image extraite du PDF : images/serveurs/serveurs_photo_08.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : Dell PowerEdge R710 servers.jpg
 - Auteur : Dell Inc.
 - Source exacte : https://commons.wikimedia.org/wiki/File:Dell_PowerEdge_R710_servers.jpg
@@ -81,6 +89,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### serveurs_photo_09
+- Image extraite du PDF : images/serveurs/serveurs_photo_09.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : Dell PowerEdge R720xd (1).jpg
 - Auteur : Dell Inc.
 - Source exacte : https://commons.wikimedia.org/wiki/File:Dell_PowerEdge_R720xd_(1).jpg
@@ -90,6 +99,7 @@ Les 30 documents de provenance synthetique sont des scénarios originaux rédig�
 - La fiche et les adaptations de photos sous CC BY-SA sont partagées sous la même licence spécifique. L’image de Dsv est dans le domaine public selon sa déclaration ; la légende de démonstration est originale.
 
 ### serveurs_photo_10
+- Image extraite du PDF : images/serveurs/serveurs_photo_10.jpg (page 1 ; voir images/tracabilite_images.csv pour les empreintes).
 - Original : Dell PowerEdge Servers.jpg
 - Auteur : Dsv
 - Source exacte : https://commons.wikimedia.org/wiki/File:Dell_PowerEdge_Servers.jpg

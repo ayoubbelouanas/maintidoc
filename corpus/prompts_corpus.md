@@ -128,3 +128,12 @@ de redistribution de ces documents.
 
 - Contrôles finaux supplémentaires : correction d’un motif de code non résolu dans les clés du tableau des messages ; les codes MD-F/MD-S ont été réinspectés dans les PDF. Le contrôle des sections du rapport a été rendu insensible à la casse des en-têtes. Une colonne de responsable a été ajoutée au tableau des risques.
 - Publication : les fichiers préparés ont été envoyés sur `codex/livraison-l1` dans le dépôt GitHub fourni ; la connexion Git existante du poste a permis l’envoi. Aucune clé ni aucun jeton n’a été affiché ou copié dans le projet.
+
+
+## P09 — Extraction et traçabilité des photographies des PDF
+
+- Date : 6 novembre 2026 ; outil : Codex et pypdf.
+- Demande utilisateur : conserver les photographies dans les PDF du dossier documents et les extraire en PNG ou JPEG dans deux sous-dossiers images correspondant aux deux familles, avec traçabilité.
+- Opération : extraire les dix flux JPEG effectivement incorporés aux dix fiches photo, sans recompression, dans images/fours/ et images/serveurs/. Le nom de base de chaque JPEG correspond à son PDF parent. Les 40 PDF du corpus restent inchangés.
+- Traçabilité : ajout du chemin image dans remarques de l’inventaire, sans modifier ses vingt colonnes. Création des registres images/tracabilite_images.csv et .json : PDF parent, page, objet image, dimensions, source, licence et empreintes SHA-256.
+- Contrôle : comparaison des octets de chaque JPEG au flux extrait du PDF et des empreintes des PDF parents avant/après. Ces images sont des ressources associées aux dix fiches existantes, pas dix nouveaux documents. L’extraction porte sur l’image après préparation de la fiche (redimensionnement et recadrage éventuel), sans la présenter comme un original plein format.

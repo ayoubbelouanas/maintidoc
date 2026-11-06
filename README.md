@@ -9,7 +9,7 @@ Assistant documentaire multimodal pour la maintenance de deux familles : fours m
 
 Le ZIP `L1_MaintiDoc_BELOUANAS.zip` contient un dossier unique du même nom, avec quatre éléments : rapport PDF de 14 pages, lien GitHub, ce README et `L1_MaintiDoc_BELOUANAS_Corpus/`.
 
-Le corpus contient **40 PDF (20 par famille)** : 30 documents synthétiques originaux et dix fiches avec photographies réelles sous droits spécifiques. Deux PDF image sont des scans simulés pour OCR ; quatre documents forment deux paires contradictoires ; deux notes piégées sont signalées. Aucun manuel fabricant sans permission de redistribution n'est inclus. Sources et conditions : `sources_et_droits.md`, inventaire et fiches photo.
+Le corpus contient **40 PDF (20 par famille)** : 30 documents synthétiques originaux et dix fiches avec photographies réelles sous droits spécifiques. Deux PDF image sont des scans simulés pour OCR ; quatre documents forment deux paires contradictoires ; deux notes piégées sont signalées. Aucun manuel fabricant sans permission de redistribution n'est inclus. Les dix JPEG incorporés aux PDF sont aussi disponibles dans `images/fours/` et `images/serveurs/`, sous le même nom de base. `images/tracabilite_images.csv` et `.json` relient images, PDF, pages, sources, licences et empreintes ; ils ne sont pas comptés comme des documents supplémentaires. Sources et conditions : `sources_et_droits.md`, inventaire et fiches photo.
 
 ## Structure du dépôt préparé
 

@@ -169,7 +169,7 @@ Chaque famille comprend registre, schéma de panneau, dictionnaire de messages f
 
 Registre
 
-inventaire.csv contient exactement les vingt colonnes requises. Provenance, licence, pages, visuels, usage de l’IA et groupes sont renseignés. Les photographies se trouvent dans leurs fiches PDF, sans fichier image supplémentaire compté comme un document distinct. verifie_par reste vide en attendant la relecture humaine effective.
+inventaire.csv contient exactement les vingt colonnes requises. Provenance, licence, pages, visuels, usage de l’IA et groupes sont renseignés. Les photographies restent dans leurs fiches PDF. Leurs JPEG intégrés sont aussi extraits dans images/fours/ et images/serveurs/, avec même nom de base. Le registre images/tracabilite_images.csv relie chaque image à son PDF, sa page, sa source et sa licence ; ces ressources associées ne sont pas comptées comme de nouveaux documents. verifie_par reste vide en attendant la relecture humaine effective.
 
 
 
@@ -521,7 +521,7 @@ Remise, contrôles et limites déclarées
 
 | README | README.md - membre, objectif, contenu et structure |
 
-| Corpus | L1_MaintiDoc_BELOUANAS_Corpus/ - 40 PDF, inventaire, prompts et registre des droits |
+| Corpus | L1_MaintiDoc_BELOUANAS_Corpus/ - 40 PDF, dix JPEG liés, inventaire, prompts et traçabilité |
 
 ### Contrôles techniques réalisés
 
