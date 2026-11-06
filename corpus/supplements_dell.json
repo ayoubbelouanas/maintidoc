@@ -1,0 +1,80 @@
+[
+  {
+    "document_id": "dell_r720_guide_technique",
+    "titre": "PowerEdge R720 and R720xd Technical Guide",
+    "pages": 65,
+    "utilite": "Architecture, mémoire, stockage, alimentation et schémas ; complément du manuel propriétaire.",
+    "perimetre": "R720 et R720xd, configurations et révision couvertes par le guide.",
+    "url_pdf": "https://dl.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprt_poweredge/poweredge-r720_reference-guide_en-us.pdf",
+    "langue": "en",
+    "verification": "PDF fabricant ouvert par outil web : titre, pagination et sommaire contrôlés le 06/11/2026 ; pas de relecture intégrale",
+    "statut": "présent ; ajouté par Ayoub et contrôlé localement",
+    "droits": "Copyright Dell ; aucune licence ouverte de redistribution établie",
+    "fichier_local": "documents/serveurs/all-products_esuprt_ser_stor_net_esuprt_poweredge_poweredge-r720_reference-guide_en-us.pdf"
+  },
+  {
+    "document_id": "dell_idrac7_v1505050",
+    "titre": "iDRAC7 Version 1.50.50 User’s Guide",
+    "pages": 258,
+    "utilite": "Supervision distante, journaux, alertes, capteurs et état du serveur.",
+    "perimetre": "iDRAC7 version 1.50.50 ; ne pas transposer à iDRAC8/9 ni à une autre version sans vérification.",
+    "url_pdf": "https://dl.dell.com/topicspdf/integrated-dell-remote-access-cntrllr-7-v1.50.50_users-guide_en-us.pdf",
+    "langue": "en",
+    "verification": "PDF fabricant ouvert par outil web : titre, pagination et sommaire contrôlés le 06/11/2026 ; pas de relecture intégrale",
+    "statut": "non présent ; non retenu dans les 33 PDF actifs",
+    "droits": "Copyright Dell ; aucune licence ouverte de redistribution établie",
+    "fichier_local": ""
+  },
+  {
+    "document_id": "dell_lifecycle_controller2_v140",
+    "titre": "Dell Lifecycle Controller 2 Release 1.4.0 User’s Guide",
+    "pages": 77,
+    "utilite": "Inventaire matériel, déploiement, mise à jour et restauration de configuration.",
+    "perimetre": "Lifecycle Controller 2, version 1.4.0 et plateformes supportées par cette version.",
+    "url_pdf": "https://dl.dell.com/topicspdf/dell-lifecycle-cntrler-2-rel-v1.4.0_users-guide_en-us.pdf",
+    "langue": "en",
+    "verification": "PDF fabricant ouvert par outil web : titre, pagination et sommaire contrôlés le 06/11/2026 ; pas de relecture intégrale",
+    "statut": "non présent ; non retenu dans les 33 PDF actifs",
+    "droits": "Copyright Dell ; aucune licence ouverte de redistribution établie",
+    "fichier_local": ""
+  },
+  {
+    "document_id": "dell_perc9_guide",
+    "titre": "Dell PowerEdge RAID Controller (PERC) 9 User’s Guide",
+    "pages": 128,
+    "utilite": "États des disques, configuration RAID, reconstruction et dépannage du stockage.",
+    "perimetre": "Cartes PERC 9 décrites dans le guide ; vérifier la carte effectivement associée au serveur.",
+    "url_pdf": "https://dl.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprtl_adapters/poweredge-rc-h830_User%27s%20Guide_en-us.pdf",
+    "langue": "en",
+    "verification": "PDF fabricant ouvert par outil web : titre, pagination et sommaire contrôlés le 06/11/2026 ; pas de relecture intégrale",
+    "statut": "présent ; ajouté par Ayoub et contrôlé localement",
+    "droits": "Copyright Dell ; aucune licence ouverte de redistribution établie",
+    "fichier_local": "documents/serveurs/all-products_esuprt_ser_stor_net_esuprtl_adapters_poweredge-rc-h830_user's guide_en-us.pdf"
+  },
+  {
+    "document_id": "dell_lifecycle_gui_v2050505",
+    "titre": "Lifecycle Controller GUI Version 2.05.05.05 for 13th Generation PowerEdge Servers User’s Guide",
+    "pages": 92,
+    "utilite": "Inventaire, mises à jour et maintenance de plateforme pour les serveurs 13G pris en charge.",
+    "perimetre": "Version 2.05.05.05, serveurs 13G supportés par cette version. La seule appartenance à 13G ne prouve pas la compatibilité de chaque modèle.",
+    "url_pdf": "https://dl.dell.com/topicspdf/idrac8-with-lc-v2.05.05.05_Users-Guide2_en-us.pdf",
+    "langue": "en",
+    "verification": "PDF fabricant ouvert par outil web : titre, pagination et sommaire contrôlés le 06/11/2026 ; pas de relecture intégrale",
+    "statut": "non présent ; non retenu dans les 33 PDF actifs",
+    "droits": "Copyright Dell ; aucune licence ouverte de redistribution établie",
+    "fichier_local": ""
+  },
+  {
+    "document_id": "dell_r730_guide_technique",
+    "titre": "PowerEdge R730 and R730xd Technical Guide v1.7",
+    "pages": 66,
+    "utilite": "Étendre le périmètre aux R730/R730xd et documenter leurs composants.",
+    "perimetre": "R730/R730xd ; utile si ces modèles sont inclus au parc étudié.",
+    "url_pdf": "https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf",
+    "langue": "en",
+    "verification": "PDF fabricant ouvert par outil web : titre, pagination et sommaire contrôlés le 06/11/2026 ; pas de relecture intégrale",
+    "statut": "présent ; ajouté par Ayoub et contrôlé localement",
+    "droits": "Copyright Dell ; aucune licence ouverte de redistribution établie",
+    "fichier_local": "documents/serveurs/Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf"
+  }
+]

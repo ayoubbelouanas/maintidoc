@@ -1,3 +1,7 @@
+# Journal IA - corpus réel actif et historique
+
+**Le corpus actif contient 33 PDF fabricants non générés par IA : 20 RATIONAL et 13 Dell.** Les étapes de création synthétique P06 à P09 ci-dessous décrivent uniquement l’ancienne version rejetée et archivée. Elles ne décrivent pas les fichiers du présent inventaire.
+
 # Traçabilité des prompts du corpus
 
 Statut : aucun document n'a encore été intégré au corpus ni validé par l'équipe.
@@ -137,3 +141,26 @@ de redistribution de ces documents.
 - Opération : extraire les dix flux JPEG effectivement incorporés aux dix fiches photo, sans recompression, dans images/fours/ et images/serveurs/. Le nom de base de chaque JPEG correspond à son PDF parent. Les 40 PDF du corpus restent inchangés.
 - Traçabilité : ajout du chemin image dans remarques de l’inventaire, sans modifier ses vingt colonnes. Création des registres images/tracabilite_images.csv et .json : PDF parent, page, objet image, dimensions, source, licence et empreintes SHA-256.
 - Contrôle : comparaison des octets de chaque JPEG au flux extrait du PDF et des empreintes des PDF parents avant/après. Ces images sont des ressources associées aux dix fiches existantes, pas dix nouveaux documents. L’extraction porte sur l’image après préparation de la fiche (redimensionnement et recadrage éventuel), sans la présenter comme un original plein format.
+
+
+## P10 — Correction vers les documents techniques réels
+
+- Date : 6 novembre 2026 ; outils : Codex, recherche web, curl, Poppler et pypdf.
+- Demande utilisateur : télécharger les PDF fabricants réels pour plusieurs modèles RATIONAL et Dell, ou fournir les liens pour téléchargement manuel ; ne pas les remplacer par des documents synthétiques.
+- Résultat initial : vingt notices RATIONAL copiées sans modification depuis les originaux téléchargés ; dix manuels Dell téléchargés ensuite par Ayoub et contrôlés localement (titre, pages et empreinte).
+- Corrections : le lot synthétique précédent et ses fiches photo sont écartés du corpus actif. Les PDF fabricants conservent leur copyright. La disponibilité publique n’est pas une licence ouverte.
+
+## P11 — Guides supplémentaires Dell et sélection effective
+
+- Date : 6 novembre 2026 ; outils : Codex et recherche web.
+- Recherche : guides techniques, RAID PERC 9, iDRAC et Lifecycle Controller réels. Les liens proposés sont des candidats ; leur présence locale est contrôlée séparément.
+- Choix effectivement réalisé par Ayoub : ajout des guides techniques R720/R720xd et R730/R730xd, ainsi que du guide PERC 9. Les trois guides iDRAC7 et Lifecycle Controller proposés mais non ajoutés ne sont pas inclus. Aucun guide iDRAC8 n’est présent non plus.
+
+## P12 — Actualisation des noms, séries et inventaire
+
+- Date : 6 novembre 2026 ; outils : Codex, pdfinfo, pdftotext et rendu Poppler.
+- Demande exacte : « j'ai ajouté guide technique r720/r720xd , r730 et r730xd et raid , les autres non , je veux que tu mis à jour tous ce qui concerne les pdfs pour qu'il reflet les noms des pdfs et les series qu'on a réellement maintenant , et n'oublie pas de mettre à jour aussi le fichier csv inventaire ».
+- Résultat : 33 fichiers réellement présents ; leurs noms d’origine sont conservés dans fichier. inventaire.csv contient exactement vingt colonnes et trente-trois lignes. Titres, pages, révisions, sources, groupes et séries documentaires sont contrôlés. Aucun nom de relecteur n’est inventé.
+- Séries : iCombi Pro, iCombi Classic, SelfCookingCenter et iHexagon ; treize désignations de serveurs Dell (dix manuels dont R720/R720xd, plus le guide R730/R730xd). PERC 9 est un composant partagé, pas un serveur.
+- Visuels : 25 rendus PNG de pages illustrées (12 notices RATIONAL et 13 documents Dell), dans images/fours/ et images/serveurs/. Ce ne sont pas des photographies isolées. CSV et JSON lient PDF, page, source et empreintes. Les PDF originaux ne sont pas modifiés ni amputés de leurs pages blanches.
+- Limites : pas de scan source identifié, pas d’injection ni de paire contradictoire interdocumentaire validée dans ce lot. Les divergences de vocabulaire de notices iHexagon sont signalées sans corriger le PDF. Les droits de redistribution et la relecture humaine restent à établir.

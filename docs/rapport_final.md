@@ -35,7 +35,7 @@ Permettre à un technicien de poser une question en français avec une photograp
 
 Décision de périmètre
 
-Le projet couvre plusieurs modèles par famille. La remise locale comporte 40 PDF : 20 par famille, dont 10 fiches avec photographies réelles au total. Les procédures et données de simulation sont identifiées comme synthétiques ; elles ne sont pas des notices constructeur.
+Le projet couvre plusieurs modèles par famille. Le corpus local comporte 33 PDF fabricants : vingt notices RATIONAL et treize documents Dell. Il comprend dix manuels propriétaires Dell, deux guides techniques et un guide RAID PERC 9. Aucun PDF synthétique ne figure dans le corpus actif. Les noms de fichiers téléchargés sont conservés exactement dans l’inventaire.
 
 ### État déclaré
 
@@ -85,7 +85,7 @@ Cinq parcours de démonstration
 
 Exemple de limite
 
-Les photographies de fours de la gamme 5 Senses ne prouvent pas la taille 61 ni une option particulière. La bonne réponse peut donc être une demande de référence, et non l’attribution arbitraire à FOUR-RAT-02. Les identifiants AMB désignent uniquement des cas de test au modèle non établi.
+Une vue de châssis ou une désignation de gamme ne prouve pas la configuration complète. Le RAG doit distinguer R720 de R720xd, iCombi Pro d’iCombi Classic et le composant PERC 9 du serveur qui l’héberge. La référence documentaire ne représente pas un numéro de série ni un équipement réel accessible à l’équipe.
 
 
 
@@ -131,121 +131,133 @@ Le VLM proposé par le sujet est Qwen2.5-VL-7B-Instruct. Sa faisabilité avec qu
 
 
 
-## 2. Constitution du corpus - Lot constitué et traçabilité
+## 2. Constitution du corpus - Les 33 PDF réellement présents
 
-40 PDF présents ; 20 documents par famille ; un fichier correspond à une ligne d’inventaire.
+Comptage fondé sur les fichiers locaux et leur contenu, pas sur les liens proposés.
 
 
 
-Lot constitué et traçabilité
+Les 33 PDF réellement présents
 
-40 PDF présents ; 20 documents par famille ; un fichier correspond à une ligne d’inventaire.
+Comptage fondé sur les fichiers locaux et leur contenu, pas sur les liens proposés.
 
-| Propriété | Fours | Serveurs | Total |
+| Nature | RATIONAL | Dell | Total |
 
-| Documents | 20 | 20 | 40 |
+| Notices de maintenance | 20 | 0 | 20 |
 
-| Documents synthétiques originaux | 15 | 15 | 30 |
+| Manuels propriétaires | 0 | 10 | 10 |
 
-| Fiches PDF avec photographie externe réelle | 5 | 5 | 10 |
+| Guides techniques R720/R720xd et R730/R730xd | 0 | 2 | 2 |
 
-| PDF image pour tester l’OCR | 1 | 1 | 2 |
+| Guide du composant RAID PERC 9 | 0 | 1 | 1 |
 
-| Versions volontairement contradictoires | 2 | 2 | 4 |
+| PDF réels présents | 20 | 13 | 33 |
 
-| Documents avec injection signalée | 1 | 1 | 2 |
+| Documents synthétiques actifs | 0 | 0 | 0 |
 
-| Documents contenant un visuel exploitable | 20 | 20 | 40 |
+| PDF avec page illustrée relevée | 12 | 13 | 25 |
 
-Les deux PDF image sont des scans simulés par rasterisation numérique des règles de suivi v1, sans couche texte. Ils testent l’OCR ; aucune acquisition papier n’est prétendue. Les tableaux et schémas originaux sont des visuels techniques synthétiques, distincts des dix photographies réelles.
+### Trois ajouts effectivement contrôlés
 
-### Variété et utilité
+Trois ajouts effectivement contrôlés
 
-Variété et utilité
+Le guide technique R720/R720xd comporte 65 pages ; celui du R730/R730xd, 66 pages ; le guide PERC 9, 128 pages. Leurs titres ont été lus dans les fichiers fournis par Ayoub. Les guides iDRAC7, iDRAC8 et Lifecycle Controller proposés mais non ajoutés sont exclus du comptage et de l’inventaire actif.
 
-Chaque famille comprend registre, schéma de panneau, dictionnaire de messages fictifs, relevé initial, plan préventif documentaire, historique, deux versions d’une règle, note piégée, cas ambigu, fiche de sécurité, chaîne de citations, flux de ticket, matrice d’accès et recette. Les codes MD-F et MD-S ne sont pas des codes fabricants.
+### Registre et noms des sources
 
-### Registre
+Registre et noms des sources
 
-Registre
+inventaire.csv comporte les vingt colonnes requises, une ligne par PDF présent et les chemins exacts, y compris espaces et apostrophes. Le document_id reste un identifiant stable normalisé ; le champ fichier conserve le nom réellement téléchargé. Les pages, versions, séries, provenance et droits proviennent des fichiers ou de leurs sources identifiées.
 
-inventaire.csv contient exactement les vingt colonnes requises. Provenance, licence, pages, visuels, usage de l’IA et groupes sont renseignés. Les photographies restent dans leurs fiches PDF. Leurs JPEG intégrés sont aussi extraits dans images/fours/ et images/serveurs/, avec même nom de base. Le registre images/tracabilite_images.csv relie chaque image à son PDF, sa page, sa source et sa licence ; ces ressources associées ne sont pas comptées comme de nouveaux documents. verifie_par reste vide en attendant la relecture humaine effective.
+### Visuels et pages blanches
 
+Visuels et pages blanches
 
+Vingt-cinq aperçus PNG de pages illustrées réelles sont disponibles : douze RATIONAL et treize Dell. Les registres images/tracabilite_images.csv et JSON relient chaque aperçu au PDF, à sa page physique, à sa source et à ses empreintes. Ces aperçus ne sont pas des photographies isolées et ne sont pas comptés comme vingt-cinq documents supplémentaires. Les pages blanches restent dans les originaux ; elles seront ignorées à l’indexation.
 
-## 2. Constitution du corpus - Modèles, preuves et droits
 
 
+## 2. Constitution du corpus - Séries et composants documentés
 
 
 
-Modèles, preuves et droits
 
-| Parc fictif | Cibles d’identification |
 
-| FOUR-RAT-01 à 04 | iCombi Pro 6-1/1 électrique ; SCC 61 électrique ; iCombi Classic 6-1/1 électrique ; iHexagon 6-1/1 |
+Séries et composants documentés
 
-| SERV-DELL-01 à 05 | PowerEdge R720xd ; R730 ; R610 ; R710 ; R720 |
+| Périmètre réel | Documents et limite |
 
-| FOUR-RAT-AMB / SERV-DELL-AMB | Images de famille ou de gamme dont le modèle exact n’est pas suffisamment établi |
+| RATIONAL : iCombi Pro | Notices de nettoyage, réservoir/cartouches, vitrage, ventilation et éclairage selon la notice et les options. |
 
-### Sources réelles intégrées
+| RATIONAL : iCombi Classic | Notices partagées de vitrage, éclairage, ventilation et optimisation électrique ; ne pas étendre les notices Pro seules. |
 
-Sources réelles intégrées
+| RATIONAL : SelfCookingCenter | Pompe UP30, CareControl TG, détartrant pour indices H/I et éclairage selon la notice. |
 
-Dix photos Commons ont une provenance précise : Travelarz pour trois vues RATIONAL de salon, Pohled 111 pour deux vues en cuisine, Dell Inc. pour trois vues de serveurs, Toni Birrer pour la vue intérieure R610 et Dsv pour une vue de façades Dell. Une photo de salon est recadrée sur l’équipement afin d’exclure les personnes.
+| RATIONAL : iHexagon | Six notices de composants : filtration, Magnetron, sonde, alimentation et ventilation. |
 
-| Photos | Conditions de réutilisation retenues |
+| Dell : dix manuels propriétaires | R220, R230, R320, R430, R520, R530, R620, R720/R720xd, T320 et T330. |
 
-| 3 RATIONAL / Travelarz | CC BY-SA 3.0 Pologne : attribution et partage à l’identique des adaptations. |
+| Dell : deux guides techniques | R720/R720xd et R730/R730xd ; aucun manuel propriétaire R730/R730xd n’a été ajouté. |
 
-| 2 RATIONAL / Pohled 111 | CC BY-SA 4.0 : attribution et partage à l’identique des adaptations. |
+| Dell : PERC 9 | Un guide du contrôleur RAID ; ce composant ne constitue pas un modèle supplémentaire de serveur. |
 
-| 4 Dell / Dell Inc. et Toni Birrer | CC BY-SA 2.0 : attribution et partage à l’identique des adaptations. |
+### Treize désignations de serveurs
 
-| 1 Dell / Dsv | Déclaration de mise dans le domaine public par l’auteur sur la fiche Commons. |
+Treize désignations de serveurs
 
-Les fiches livrées indiquent auteur, fichier source, URL de provenance, licence et transformation. La version de licence propre à chaque photographie est conservée. Les marques et les manuels fabricants ne deviennent pas libres parce qu’une photo est sous Creative Commons.
+R220, R230, R320, R430, R520, R530, R620, R720, R720xd, R730, R730xd, T320 et T330 sont documentés, avec une profondeur différente selon le type de guide. R610, R710 et T630 ne font pas partie du corpus technique actif. Les références DELL_* et RAT_* servent aux métadonnées ; ce ne sont pas des numéros de série.
 
-### Notices fabricants écartées de la redistribution
+### Applicabilité par document
 
-Notices fabricants écartées de la redistribution
+Applicabilité par document
 
-L’audit RATIONAL a contrôlé 41 notices : 38 deviennent candidates avec le périmètre multi-modèles, deux concernent des hottes et une reste contradictoire. Aucune licence de redistribution du lot n’est établie : ces PDF restent hors ZIP et hors dépôt. Les accès directs Dell ont renvoyé HTTP 403 ; ils ne sont pas déclarés téléchargés.
+Les formats, l’énergie, les indices, les références de pièces et les options restent associés à chaque notice. Le système ne doit pas appliquer une notice iHexagon à un iCombi Pro, une procédure électrique à la variante gaz, ni un guide PERC 9 à une carte d’une autre génération. La ligne MI_2505 précise que la seule mention SCC dans son titre ne prouve pas son inclusion dans la rubrique produit.
 
 
 
-## 2. Constitution du corpus - Usage critique de l’IA et relecture
+## 2. Constitution du corpus - Traçabilité, droits et limites actuelles
 
 
 
 
 
-Usage critique de l’IA et relecture
+Traçabilité, droits et limites actuelles
 
-### Erreurs et corrections observées
+### Source réelle et assistance IA
 
-Erreurs et corrections observées
+Source réelle et assistance IA
 
-La recherche initiale a confondu volume de liens PDF et volume de documents compatibles. Sur 41 notices RATIONAL, seules 14 correspondaient sous conditions aux deux premiers modèles électriques. L’élargissement à plusieurs gammes porte le nombre technique de candidats à 38, sans résoudre les droits. Cette correction évite de présenter un réservoir comme un corpus validé.
+Les 33 PDF sont des publications fabricants ; genere_par_ia vaut non pour chaque fichier. L’assistant a aidé à rechercher les sources, contrôler les noms, titres, pages et empreintes, puis produire les métadonnées et les aperçus. Il n’a pas réécrit les manuels. Les prompts historiques sont conservés et les corrections du lot sont tracées dans P10 à P12.
 
-Certaines notices visent les appareils gaz, XS, au sol ou iHexagon. Les noms proches ne suffisent pas à établir la compatibilité. Les notices de réservoir/cartouches exigent la configuration correspondante ; aucune photo générale ne prouve AutoDose. MI_2511 comporte une incohérence entre les formats annoncés et un texte parlant de 20 niveaux : elle reste en quarantaine.
+### Correction du travail antérieur
 
-Des photos anciennes encore indexées étaient devenues indisponibles. Une fiche vendeur SCC61 se contredisait sur le nombre de phases. Une photo de pièce R730 démontre un panneau déposé, sans établir une panne ni un serveur alimenté. Les photos finales sont donc annotées selon leurs preuves, avec modèle inconnu lorsque nécessaire.
+Correction du travail antérieur
 
-La licence d’une plateforme ne remplace pas celle d’un PDF tiers : des manuels Dell hébergés sur iFixit conservent leur copyright. Les conditions iFixit interdisent aussi l’entraînement de modèles sur leurs données. Aucun de ces documents n’a été intégré au corpus livré ni prévu pour le fine-tuning.
+L’ancien lot principalement synthétique a été rejeté par Ayoub. Il est archivé séparément et n’alimente plus l’inventaire actif. La présente révision utilise uniquement les fichiers réellement ajoutés. Les trois guides Dell supplémentaires non téléchargés sont explicitement hors sélection ; aucun téléchargement absent n’est présenté comme accompli.
 
-### Traçabilité et contrôles
+### Droits de réutilisation
 
-Traçabilité et contrôles
+Droits de réutilisation
 
-prompts_corpus.md conserve les recherches antérieures et les nouveaux prompts P05 à P08. Pour chaque document, l’inventaire indique synthétique ou URL réelle, outil et prompt, droits, transformations et contrôles. Les messages, intervalles et identifiants fictifs sont cohérents entre les règles, versions et historiques.
+Disponibilité publique et licence ouverte sont distinctes. Les PDF portent le copyright RATIONAL ou Dell ; aucune permission générale de redistribution n’est établie pour ce lot. Les fichiers et leurs rendus restent locaux. Le dépôt GitHub ne publie que rapport, liens, inventaires et métadonnées ; il ne redistribue pas les fichiers fabricants. La conformité juridique du corpus remis reste à établir selon l’usage autorisé.
 
-### Validation humaine indispensable
+### Exigences L1 non encore satisfaites
 
-Validation humaine indispensable
+Exigences L1 non encore satisfaites
 
-Les contrôles de l’assistant portent sur les fichiers, références, droits publiés et mise en page. Ils ne remplacent pas la relecture de l’équipe. Ayoub devra relire, corriger puis renseigner verifie_par et corrections. Aucun nom de relecteur ni résultat de test du prototype n’a été inventé.
+| Exigence | État du lot réel actuel |
+
+| 30 à 50 documents, deux familles | 33 PDF présents : volume atteint. |
+
+| Au moins dix documents avec visuels | 25 pages illustrées repérées et rendues, sur 25 PDF distincts. |
+
+| Deux documents scannés pour OCR | Aucun scan identifié et validé dans ce lot ; ne pas compter les pages blanches ou les aperçus PNG comme des scans. |
+
+| Deux documents contradictoires et une injection | Aucune paire interdocumentaire ni note piégée validée dans le lot actif. Les ambiguïtés de vocabulaire ne suffisent pas à valider ces exigences. |
+
+| Relecture humaine | Champs verifie_par vides tant qu’Ayoub n’a pas validé chaque document. |
+
+Le rapport décrit un état réel du corpus, pas une conformité complète à toutes les exigences du L1. Aucune donnée sensible réelle, aucun ticket de production et aucun résultat de performance du prototype ne sont introduits.
 
 
 
@@ -329,27 +341,27 @@ Ingestion et métadonnées
 
 Étapes et contrôles
 
-1. Vérifier présence du fichier, licence, provenance et validation humaine. Refuser un document absent de l’inventaire ou sans groupe d’accès.<br/>2. Conserver l’original et son empreinte ; détecter PDF texte ou PDF image.<br/>3. Extraire texte, tableaux et figures. L’OCR fournit texte et positions pour les deux scans simulés.<br/>4. Découper en passages et éléments visuels, en conservant la page PDF physique et les renvois.<br/>5. Calculer les représentations textuelles et visuelles puis indexer avec les ACL héritées. Les fichiers de test restent identifiés.
+1. Vérifier présence du fichier, licence, provenance et validation humaine. Refuser un document absent de l’inventaire ou sans groupe d’accès.<br/>2. Conserver l’original et son empreinte ; détecter PDF texte ou PDF image.<br/>3. Extraire texte, tableaux et figures. L’OCR sera utilisé pour les scans qui restent à constituer ; les aperçus de pages ne sont pas comptés comme des scans sources.<br/>4. Découper en passages et éléments visuels, en conservant la page PDF physique et les renvois.<br/>5. Calculer les représentations textuelles et visuelles puis indexer avec les ACL héritées. Les fichiers de test restent identifiés.
 
 | Métadonnée d’un élément | Exemple concret du corpus |
 
-| document_id / version | fours_codes / v1 (2026-11-06) |
+| document_id / version | dell_r720_manuel / Rev. A07 |
 
-| page / element_id / type | 1 / tableau_1 / tableau |
+| page / element_id / type | 8 / figure_1 / figure |
 
-| famille_equipement | fours_mixtes_professionnels |
+| famille_equipement | serveurs_informatiques |
 
-| equipement_ids | FOUR-RAT-01 à FOUR-RAT-04, selon le registre |
+| equipement_ids | DELL_R720 ; DELL_R720XD |
 
-| groupes_acces | techniciens_fours ; responsables |
+| groupes_acces | techniciens_serveurs ; responsables |
 
-| source_file | documents/fours/fours_codes.pdf |
+| source_file | documents/serveurs/poweredge-r720_owners-manual_en-us.pdf |
 
-| usage_test / provenance | normal / synthetique |
+| usage_test / provenance | normal / URL du PDF fabricant Dell |
 
 | empreinte et extraction | SHA-256 du fichier ; OCR ou texte, avec confiance si disponible |
 
-Une nouvelle version reçoit un identifiant ou une version distincte. Les versions v1 et v2 contradictoires restent disponibles pour comparaison ; le contenu ancien n’est pas silencieusement écrasé.
+Une nouvelle version reçoit un identifiant ou une version distincte. Le contenu ancien ne sera pas silencieusement écrasé lors de l’ajout d’une nouvelle version. Les paires de test restent à constituer.
 
 
 
@@ -369,11 +381,11 @@ Parcours complet
 
 | Groupe | Périmètre autorisé |
 
-| techniciens_fours | Documents fours normaux et ambigus explicitement partagés ; pas les notes piégées réservées. |
+| techniciens_fours | Les vingt notices RATIONAL attribuées à ce groupe et explicitement partagées avec responsables. |
 
-| techniciens_serveurs | Documents serveurs normaux et ambigus explicitement partagés ; pas les documents fours. |
+| techniciens_serveurs | Les treize PDF Dell attribués à ce groupe ; pas les documents fours. |
 
-| responsables | Deux parcs explicitement partagés, y compris les deux notes de test réservées. |
+| responsables | Deux familles explicitement partagées. Les futurs documents de sécurité auront des droits distincts. |
 
 | Groupe absent / inconnu | Refus par défaut ; aucune déduction de droits à partir d’un texte de document. |
 
@@ -381,7 +393,7 @@ Parcours complet
 
 Illustration d’un refus
 
-Un utilisateur techniciens_fours demande serveurs_historique : la recherche ne lui renvoie ni extrait ni figure. Une requête directe vers le PDF ou son image extraite reste refusée. Le service MCP applique ses propres contrôles même si la recherche a déjà filtré le corpus.
+Un utilisateur techniciens_fours demande le manuel Dell R720 : la recherche ne lui renvoie ni extrait ni figure. Une requête directe vers le PDF ou son image extraite reste refusée. Le service MCP applique ses propres contrôles même si la recherche a déjà filtré le corpus.
 
 
 
@@ -443,9 +455,9 @@ Risques et mesures initiales
 
 | Injection de prompt / sécurité | 2 | 3 | Documents traités comme données ; outils limités ; tests réservés. | Ayoub |
 
-| Erreur IA / données | 3 | 3 | Codes MD fictifs, registre commun, relecture humaine réelle. | Ayoub |
+| Erreur de métadonnées / données | 3 | 3 | Contrôler titres, chemins, séries, révisions et pages des PDF réels. | Ayoub |
 
-| Droits de réutilisation / données | 2 | 3 | Exclure les notices protégées ; attribution des photos et licences propres. | Ayoub |
+| Droits de réutilisation / données | 3 | 3 | Conserver les copyrights ; ne pas publier les PDF ou leurs rendus sans autorisation. | Ayoub |
 
 | Mémoire GPU insuffisante / technique | 2 | 3 | Mesurer tôt ; quantifier et prévoir un VLM plus petit. | Ayoub |
 
@@ -455,7 +467,7 @@ Risques et mesures initiales
 
 | Fuite entraînement/test / données | 2 | 3 | Séparer les documents avant génération des triplets du reranker. | Ayoub |
 
-| Délai et relecture / organisation | 3 | 3 | Limiter à 40 documents, suivre les contrôles et réserver la validation finale. | Ayoub |
+| Délai et relecture / organisation | 3 | 3 | Garder les 33 PDF présents ; traiter les exigences encore ouvertes et réserver la relecture finale. | Ayoub |
 
 Ces scores sont des estimations de cadrage et non des résultats d’expérience. Le suivi de chaque risque sera mis à jour pendant les semaines 2 à 6, avec les incidents rencontrés et la mesure appliquée.
 
@@ -497,7 +509,7 @@ Responsabilités et semaines 2 à 6
 
 Définir en S5 les seuils et jeux de test. Mesurer nDCG@5 et MRR@10 pour le classement, qualité de l’appui documentaire, refus intergroupes, résistance aux injections et absence de création non approuvée. Rapporter les résultats même si le fine-tuning n’améliore pas le classement.
 
-Les deux notes piégées, les quatre versions contradictoires et les photographies ambiguës servent à des tests réservés. Les images et textes tiers ne sont pas utilisés pour entraîner le modèle vision-langage, qui reste inchangé.
+Les scans, paires contradictoires et documents piégés restent à constituer et à réserver aux tests. Les ambiguïtés de modèle seront testées avec des sources adéquates. Les images et textes tiers ne sont pas utilisés pour entraîner le modèle vision-langage, qui reste inchangé.
 
 
 
@@ -511,7 +523,7 @@ Remise, contrôles et limites déclarées
 
 | Élément requis | Nom / état de préparation |
 
-| Archive | L1_MaintiDoc_BELOUANAS.zip |
+| Archive de travail locale | L1_MaintiDoc_BELOUANAS.zip - conformité L1 encore incomplète |
 
 | Dossier racine | L1_MaintiDoc_BELOUANAS/ - quatre éléments seulement |
 
@@ -521,24 +533,24 @@ Remise, contrôles et limites déclarées
 
 | README | README.md - membre, objectif, contenu et structure |
 
-| Corpus | L1_MaintiDoc_BELOUANAS_Corpus/ - 40 PDF, dix JPEG liés, inventaire, prompts et traçabilité |
+| Corpus | L1_MaintiDoc_BELOUANAS_Corpus/ - 33 PDF réels, aperçus PNG, inventaire et traçabilité |
 
 ### Contrôles techniques réalisés
 
 Contrôles techniques réalisés
 
-Les contrôles passent : noms et arborescence du ZIP, bijection entre les 40 fichiers et l’inventaire, empreintes distinctes, pages, deux PDF image sans couche texte, liens et attributions, rendu du rapport et recherche de motifs de secrets. Le journal détaillé est enregistré dans docs/controle_livraison.json. Ces contrôles ne remplacent pas la relecture humaine.
+Les contrôles portent sur la bijection entre les 33 PDF et l’inventaire, leurs noms exacts, pages, empreintes, séries, sources et liens vers les aperçus. Le contrôle technique n’efface pas les exigences encore ouvertes : scans, tests spécifiques et droits de redistribution. Le journal détaillé est enregistré dans docs/controle_livraison.json. Ces contrôles ne remplacent pas la relecture humaine.
 
 ### Relecture et dépôt
 
 Relecture et dépôt
 
-1. Relire et corriger les documents puis compléter verifie_par et corrections. Les champs de relecture sont volontairement vides au moment de la préparation.<br/>2. Vérifier la version à remettre après cette relecture. Les fichiers préparés sont publiés sur la branche codex/livraison-l1 du dépôt fourni. La publication ne constitue pas une validation humaine du corpus.
+1. Relire et corriger les documents puis compléter verifie_par et corrections. Les champs de relecture sont volontairement vides au moment de la préparation.<br/>2. Vérifier la version à remettre après cette relecture. Les métadonnées et liens sont publiés sur codex/livraison-l1. Les originaux fabricants restent locaux faute d’autorisation générale de redistribution établie. Les fichiers publiés ne constituent pas une validation humaine du corpus.
 
 ### Sources et audit
 
 Sources et audit
 
-Le journal du corpus liste les sources précises et les conditions de réutilisation. Les fiches photographiques portent leurs liens de licence. Les audits de recherche et les sources des schémas restent dans docs/ ; les notices fabricants sans permission de redistribution sont exclues de l’archive et du dépôt préparé.
+Le journal liste les sources et contrôles effectués. Le paquet local de travail conserve les originaux pour vérification ; il ne constitue pas une autorisation de les redistribuer. Les archives synthétiques sont séparées du corpus actif. Les exigences non résolues sont explicites en partie 2.
 
 Dépôt de l’équipe : <link href="https://github.com/ayoubbelouanas/maintidoc" color="#087E8B">github.com/ayoubbelouanas/maintidoc</link><br/>Référentiel pédagogique : L1, 29 octobre 2026, Mariam Cherrabi. Date de remise déclarée : 6 novembre 2026 ; aucune heure limite n’a été fournie.

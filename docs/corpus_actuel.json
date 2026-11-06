@@ -1,0 +1,834 @@
+{
+  "date": "2026-11-06",
+  "dossier_actif": "corpus_reel_candidats",
+  "pdf_total": 33,
+  "pdf_rational": 20,
+  "pdf_dell": 13,
+  "notices_rational": 20,
+  "manuels_dell": 10,
+  "guides_techniques_dell": 2,
+  "guide_raid_perc9": 1,
+  "documents_synthetiques_actifs": 0,
+  "series": {
+    "RAT_ICOMBI_PRO": [
+      "rational_mi_2505",
+      "rational_mi_2315",
+      "rational_mi_2318",
+      "rational_mi_2314",
+      "rational_mi_2312",
+      "rational_mi_2310",
+      "rational_mi_2309",
+      "rational_mi_2308",
+      "rational_mi_2202",
+      "rational_mi_2208",
+      "rational_mi_2201"
+    ],
+    "RAT_ICOMBI_CLASSIC": [
+      "rational_mi_2505",
+      "rational_mi_2202",
+      "rational_mi_2208",
+      "rational_mi_2201"
+    ],
+    "RAT_SCC": [
+      "rational_mi_2217",
+      "rational_mi_2214",
+      "rational_mi_2221",
+      "rational_mi_2201"
+    ],
+    "RAT_IHEXAGON": [
+      "rational_mi_2418",
+      "rational_mi_2410",
+      "rational_mi_2409",
+      "rational_mi_2408",
+      "rational_mi_2406",
+      "rational_mi_2402"
+    ],
+    "DELL_R220": [
+      "dell_r220_manuel"
+    ],
+    "DELL_R230": [
+      "dell_r230_manuel"
+    ],
+    "DELL_R320": [
+      "dell_r320_manuel"
+    ],
+    "DELL_R430": [
+      "dell_r430_manuel"
+    ],
+    "DELL_R520": [
+      "dell_r520_manuel"
+    ],
+    "DELL_R530": [
+      "dell_r530_manuel"
+    ],
+    "DELL_R620": [
+      "dell_r620_manuel"
+    ],
+    "DELL_R720": [
+      "dell_r720_manuel",
+      "dell_r720_guide_technique"
+    ],
+    "DELL_R720XD": [
+      "dell_r720_manuel",
+      "dell_r720_guide_technique"
+    ],
+    "DELL_T320": [
+      "dell_t320_manuel"
+    ],
+    "DELL_T330": [
+      "dell_t330_manuel"
+    ],
+    "DELL_PERC9": [
+      "dell_perc9_guide"
+    ],
+    "DELL_R730": [
+      "dell_r730_guide_technique"
+    ],
+    "DELL_R730XD": [
+      "dell_r730_guide_technique"
+    ]
+  },
+  "visuels_rendus": 25,
+  "pdf_avec_page_visuelle_relevee": 25,
+  "scans_identifies": 0,
+  "documents_injection_identifies": 0,
+  "paires_contradictoires_validees": 0,
+  "relecture_humaine": "non attestée",
+  "licences_ouvertes_pdf": 0,
+  "documents": [
+    {
+      "document_id": "rational_mi_2505",
+      "fichier": "documents/fours/rational_mi_2505.pdf",
+      "nom_fichier": "rational_mi_2505.pdf",
+      "titre": "MI_2505 - Kit de vitres intérieures - Démontage et montage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO",
+        "RAT_ICOMBI_CLASSIC"
+      ],
+      "perimetre": "Le titre cite aussi SCC, mais la rubrique produit vise iCombi Pro/Classic ; ne pas étendre au SCC sur la seule base du titre.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V01 (05/2025)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2025/mi_2505/MI_2505_fr-FR.pdf",
+      "sha256": "b43412e9145783fadc4bac0275ff67f889cd9f8827355fe463a1defd94fd3036",
+      "taille_octets": 184334,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 4
+    },
+    {
+      "document_id": "rational_mi_2315",
+      "fichier": "documents/fours/rational_mi_2315.pdf",
+      "nom_fichier": "rational_mi_2315.pdf",
+      "titre": "MI_2315 - Platine de pompe (contrôleur de produits chimiques) - Démontage et montage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO"
+      ],
+      "perimetre": "Électrique/gaz ; 6-1/1 à 10-2/1 ; platine A13 et système de réserve/cartouches.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V01 (07/2023)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2023/mi_2315/MI_2315_fr-FR.pdf",
+      "sha256": "e98569361b8dae5468b259aec4cc67c10a5b4e80183fadabc44ba9263eafdf73",
+      "taille_octets": 263710,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 4
+    },
+    {
+      "document_id": "rational_mi_2318",
+      "fichier": "documents/fours/rational_mi_2318.pdf",
+      "nom_fichier": "rational_mi_2318.pdf",
+      "titre": "MI_2318 - Distributeur de produits chimiques - Montage et démontage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO"
+      ],
+      "perimetre": "Électrique/gaz ; 6-1/1 à 10-2/1 ; distributeur de produits chimiques, révision 02/2026.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V02 (02/2026)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2023/mi_2318/MI_2318_fr-FR.pdf",
+      "sha256": "1eebff46ede06125c0b130735053c5579510b06c805e1d918979b999c8b8f0b5",
+      "taille_octets": 551550,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 5
+    },
+    {
+      "document_id": "rational_mi_2314",
+      "fichier": "documents/fours/rational_mi_2314.pdf",
+      "nom_fichier": "rational_mi_2314.pdf",
+      "titre": "MI_2314 - Tuyau d’évacuation, plinthe de socle droit - Démontage et montage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO"
+      ],
+      "perimetre": "Électrique/gaz ; 6-1/1 à 10-2/1 ; réserve de produits nettoyants.",
+      "nb_pages": 12,
+      "langue": "fr",
+      "version": "V02 (04/2024)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2023/mi_2314/MI_2314_fr-FR.pdf",
+      "sha256": "65cb492580f2e13d636cfc3846cffe934e1184f8972693a07c96883a781e09f9",
+      "taille_octets": 254639,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 7
+    },
+    {
+      "document_id": "rational_mi_2312",
+      "fichier": "documents/fours/rational_mi_2312.pdf",
+      "nom_fichier": "rational_mi_2312.pdf",
+      "titre": "MI_2312 - Jeu de flexibles de distribution des produits nettoyants - Retrait et installation",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO"
+      ],
+      "perimetre": "Électrique/gaz ; 6-1/1 à 10-2/1 ; système de distribution des produits nettoyants.",
+      "nb_pages": 12,
+      "langue": "fr",
+      "version": "V01 (10/2023)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2023/mi_2312/MI_2312_fr-FR.pdf",
+      "sha256": "e08744d7e9ae83b7a0379ef5c4b3012de41c36eaccfdc9763d0fafc7f43559f1",
+      "taille_octets": 362319,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 8
+    },
+    {
+      "document_id": "rational_mi_2310",
+      "fichier": "documents/fours/rational_mi_2310.pdf",
+      "nom_fichier": "rational_mi_2310.pdf",
+      "titre": "MI_2310 - Détection de cartouche - Dépose et pose",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO"
+      ],
+      "perimetre": "Électrique/gaz ; 6-1/1 à 10-2/1 ; système de réserve/cartouches.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V01 (07/2023)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2023/mi_2310/MI_2310_fr-FR.pdf",
+      "sha256": "9425cc61c45d643bcbcd80287d4eea5f9305694f39bdabe866895269ef8e76c8",
+      "taille_octets": 295841,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 6
+    },
+    {
+      "document_id": "rational_mi_2309",
+      "fichier": "documents/fours/rational_mi_2309.pdf",
+      "nom_fichier": "rational_mi_2309.pdf",
+      "titre": "MI_2309 - Réserve de produits nettoyants - Démontage et montage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO"
+      ],
+      "perimetre": "Électrique/gaz ; 6-1/1, 6-2/1, 10-1/1, 10-2/1 ; réserve de produits nettoyants.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V01 (07/2023)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2023/mi_2309/MI_2309_fr-FR.pdf",
+      "sha256": "0b616d69585b3984f25489543ca9abcdc6c85f7e51f412e4ed60fcb7a999e34b",
+      "taille_octets": 298523,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 5
+    },
+    {
+      "document_id": "rational_mi_2308",
+      "fichier": "documents/fours/rational_mi_2308.pdf",
+      "nom_fichier": "rational_mi_2308.pdf",
+      "titre": "MI_2308 - Fermeture de la trappe de la réserve de produits nettoyants - Démontage et montage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO"
+      ],
+      "perimetre": "Électrique/gaz ; 6-1/1 à 10-2/1 ; réserve/cartouches et configuration de nettoyage correspondante.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V02 (08/2023)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2023/mi_2308/MI_2308_fr-FR.pdf",
+      "sha256": "3cb16944098f0e75b529a548ddf691580313a1bd839a53e5036186bcf632ec7c",
+      "taille_octets": 235989,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 5
+    },
+    {
+      "document_id": "rational_mi_2217",
+      "fichier": "documents/fours/rational_mi_2217.pdf",
+      "nom_fichier": "rational_mi_2217.pdf",
+      "titre": "MI_2217 - Instructions de transformation de la pompe CareControl TG",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_SCC"
+      ],
+      "perimetre": "SCC électrique/gaz ; appareils de table 6-1/1 à 10-2/1 ; CareControl TG.",
+      "nb_pages": 12,
+      "langue": "fr",
+      "version": "V02.1 (06/2025)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2022_2/mi_2217/MI_2217_fr-FR.pdf",
+      "sha256": "94fdd3a3db017210d6d1b4dce78a0a0d59e2ec73492db2c3357a3efd8f67e1e7",
+      "taille_octets": 385645,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 5
+    },
+    {
+      "document_id": "rational_mi_2214",
+      "fichier": "documents/fours/rational_mi_2214.pdf",
+      "nom_fichier": "rational_mi_2214.pdf",
+      "titre": "MI_2214 - Modification de la pompe de nettoyage UP30 des appareils de table et appareils au sol",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_SCC"
+      ],
+      "perimetre": "SCC électrique/gaz ; 6-1/1, 6-2/1, 10-1/1, 10-2/1, 20-1/1, 20-2/1 ; pompe et kit concernés.",
+      "nb_pages": 24,
+      "langue": "fr",
+      "version": "V03.1 (06/2025)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2022_2/mi_2214/MI_2214_fr-FR.pdf",
+      "sha256": "146fdc11b419dcdedff1f52c09ab2fd3fc7f5161a1f575229c0b60ce8d2d9ba6",
+      "taille_octets": 698634,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 5
+    },
+    {
+      "document_id": "rational_mi_2221",
+      "fichier": "documents/fours/rational_mi_2221.pdf",
+      "nom_fichier": "rational_mi_2221.pdf",
+      "titre": "MI_2221 - Utilisation du détartrant - SelfCookingCenter",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_SCC"
+      ],
+      "perimetre": "Indices H et I ; électrique/gaz ; formats 6-2/3 à 20-2/1 selon liste de la notice.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V01 (01/2023)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2022_2/mi_2221/MI_2221_fr-FR.pdf",
+      "sha256": "ae271a734b917351fc3fd3968b2c6cb0b4a7a7b50fed1d747287e059b879e115",
+      "taille_octets": 94619,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": null
+    },
+    {
+      "document_id": "rational_mi_2202",
+      "fichier": "documents/fours/rational_mi_2202.pdf",
+      "nom_fichier": "rational_mi_2202.pdf",
+      "titre": "MI_2202 - Optimisation d’énergie de l’iCombi Pro / iCombi Classic électrique",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO",
+        "RAT_ICOMBI_CLASSIC"
+      ],
+      "perimetre": "Électrique ; formats 6-2/3, 6-1/1, 6-2/1, 10-1/1, 10-2/1, 20-1/1 et 20-2/1 ; kit adapté au format.",
+      "nb_pages": 12,
+      "langue": "fr",
+      "version": "V02 (06/2025)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2022_2/mi_2202/MI_2202_fr-FR.pdf",
+      "sha256": "a837173fd806da85f7ce90a2e45eaeb55056e9d66ec8e7d2c716b1d917bd57d1",
+      "taille_octets": 496117,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 5
+    },
+    {
+      "document_id": "rational_mi_2208",
+      "fichier": "documents/fours/rational_mi_2208.pdf",
+      "nom_fichier": "rational_mi_2208.pdf",
+      "titre": "MI_2208 - Ventilateur de refroidissement - Démontage et montage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO",
+        "RAT_ICOMBI_CLASSIC"
+      ],
+      "perimetre": "Électrique/gaz ; 6-1/1 à 20-2/1 selon liste p.17 ; section française à partir de p.17.",
+      "nb_pages": 104,
+      "langue": "fr",
+      "version": "V01 (06/2022)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/icombi_pro___icombi_classik/beipack/MI_2208.pdf",
+      "sha256": "a667a6b6d6bcb0cf5e4e793202c457dde51cbf01e9627ff99673ea03a6e90433",
+      "taille_octets": 1361881,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": null
+    },
+    {
+      "document_id": "rational_mi_2201",
+      "fichier": "documents/fours/rational_mi_2201.pdf",
+      "nom_fichier": "rational_mi_2201.pdf",
+      "titre": "MI_2201 - Spot LED - Démontage et montage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO",
+        "RAT_ICOMBI_CLASSIC",
+        "RAT_SCC"
+      ],
+      "perimetre": "Électrique/gaz ; référence du kit LED et numéro de série à vérifier.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V03 (05/2025)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2022_2/mi_2201/MI_2201_fr-FR.pdf",
+      "sha256": "b6f710833fdcd76da1a824ce69d9a4b0ba8dc15d68b531d3e8e4db9c5f3ef789",
+      "taille_octets": 145565,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 4
+    },
+    {
+      "document_id": "rational_mi_2418",
+      "fichier": "documents/fours/rational_mi_2418.pdf",
+      "nom_fichier": "rational_mi_2418.pdf",
+      "titre": "MI_2418 - Ventilateur de refroidissement de porte iHexagon - Remplacement",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_IHEXAGON"
+      ],
+      "perimetre": "iHexagon ; ventilateur 40.07.713P ; nombre de pièces à vérifier.",
+      "nb_pages": 6,
+      "langue": "fr",
+      "version": "V01 (09/2026)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2024_2/mi_2418/MI_2418_fr-FR.pdf",
+      "sha256": "62be4a7be55acd7b81dfb1831be2c1bec27a87b878c06ab7363677e60b6af6f7",
+      "taille_octets": 530307,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": null
+    },
+    {
+      "document_id": "rational_mi_2410",
+      "fichier": "documents/fours/rational_mi_2410.pdf",
+      "nom_fichier": "rational_mi_2410.pdf",
+      "titre": "MI_2410 - Bloc d’alimentation du ventilateur 48 W - Remplacement",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_IHEXAGON"
+      ],
+      "perimetre": "iHexagon ; bloc d’alimentation 40.07.227P.",
+      "nb_pages": 4,
+      "langue": "fr",
+      "version": "V02 (09/2026)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2024_2/mi_2410/MI_2410_fr-FR.pdf",
+      "sha256": "f30979a48db47427c81ec94a9ea1f3a4a7801e51ae966d329afed728b57587ba",
+      "taille_octets": 519795,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": null
+    },
+    {
+      "document_id": "rational_mi_2409",
+      "fichier": "documents/fours/rational_mi_2409.pdf",
+      "nom_fichier": "rational_mi_2409.pdf",
+      "titre": "MI_2409 - Bloc d’alimentation Magnetron (208 V et 400 V) - Remplacement",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_IHEXAGON"
+      ],
+      "perimetre": "iHexagon ; tension et référence de pièce à distinguer ; le tableau emploie électrovanne, contrairement au titre Magnetron.",
+      "nb_pages": 6,
+      "langue": "fr",
+      "version": "V02 (09/2026)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2024_2/mi_2409/MI_2409_fr-FR.pdf",
+      "sha256": "5e549ba6a9f7e84c54fb14c61ea34a65f5009d7eb88a104c3a02024cf8cbbc7c",
+      "taille_octets": 404078,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": null
+    },
+    {
+      "document_id": "rational_mi_2408",
+      "fichier": "documents/fours/rational_mi_2408.pdf",
+      "nom_fichier": "rational_mi_2408.pdf",
+      "titre": "MI_2408 - Sonde de température Magnetron - Remplacement",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_IHEXAGON"
+      ],
+      "perimetre": "iHexagon ; sonde 40.05.842P.",
+      "nb_pages": 6,
+      "langue": "fr",
+      "version": "V02 (09/2026)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2024_2/mi_2408/MI_2408_fr-FR.pdf",
+      "sha256": "df5604b1acb427d21bfcf45ffa2ba4ad29e83bc7803381fb120b8a20df4ea332",
+      "taille_octets": 800208,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": null
+    },
+    {
+      "document_id": "rational_mi_2406",
+      "fichier": "documents/fours/rational_mi_2406.pdf",
+      "nom_fichier": "rational_mi_2406.pdf",
+      "titre": "MI_2406 - Magnetron avec Klixon - Remplacement",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_IHEXAGON"
+      ],
+      "perimetre": "iHexagon ; vérifier la référence de pièce. Le titre parle de Magnetron, le tableau emploie électrovanne : incohérence de terme à signaler.",
+      "nb_pages": 8,
+      "langue": "fr",
+      "version": "V02 (09/2026)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2024_2/mi_2406/MI_2406_fr-FR.pdf",
+      "sha256": "9dc221e18eacf7f9ed0d03729ba7cda7e6450c9d75d91bfff70dc9eb61e17560",
+      "taille_octets": 1247427,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": null
+    },
+    {
+      "document_id": "rational_mi_2402",
+      "fichier": "documents/fours/rational_mi_2402.pdf",
+      "nom_fichier": "rational_mi_2402.pdf",
+      "titre": "MI_2402 - Unité filtrante panneau latéral droit - Démontage",
+      "fabricant": "RATIONAL",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "gamme",
+      "series_documentees": [
+        "RAT_IHEXAGON"
+      ],
+      "perimetre": "iHexagon ; référence et montage de l’unité filtrante indiqués par la notice.",
+      "nb_pages": 6,
+      "langue": "fr",
+      "version": "V02 (09/2026)",
+      "source": "https://portal.rational-online.com/fs4p/media/service/3_dokumentationen/ein___umbau/2024_2/mi_2402/MI_2402_fr-FR.pdf",
+      "sha256": "b1bae8c2aca89c2e9782523c2d69bd8c6abce0acafd829df8727dd96cc83f502",
+      "taille_octets": 361884,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": null
+    },
+    {
+      "document_id": "dell_r220_manuel",
+      "fichier": "documents/serveurs/poweredge-r220_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-r220_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge R220 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R220"
+      ],
+      "perimetre": "PowerEdge R220 ; configurations couvertes par ce manuel.",
+      "nb_pages": 98,
+      "langue": "en",
+      "version": "Rev. A02",
+      "source": "https://dl.dell.com/topicspdf/poweredge-r220_owners-manual_en-us.pdf",
+      "sha256": "ca33f778d28709fe0c42a0a32f34f4d2016b0f1bea9e82ad12f76c4cf5ec83c5",
+      "taille_octets": 3317262,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 7
+    },
+    {
+      "document_id": "dell_r230_manuel",
+      "fichier": "documents/serveurs/poweredge-r230_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-r230_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge R230 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R230"
+      ],
+      "perimetre": "PowerEdge R230 ; configurations couvertes par ce manuel.",
+      "nb_pages": 141,
+      "langue": "en",
+      "version": "Rev. A05",
+      "source": "https://dl.dell.com/topicspdf/poweredge-r230_owners-manual_en-us.pdf",
+      "sha256": "e66236110f9f609b1c8efa63414d70e1c3b8cad47fb56688af1a1b646ca93057",
+      "taille_octets": 9006510,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 9
+    },
+    {
+      "document_id": "dell_r320_manuel",
+      "fichier": "documents/serveurs/poweredge-r320_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-r320_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge R320 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R320"
+      ],
+      "perimetre": "PowerEdge R320 ; configurations couvertes par ce manuel.",
+      "nb_pages": 128,
+      "langue": "en",
+      "version": "Rev. A05",
+      "source": "https://dl.dell.com/topicspdf/poweredge-r320_owners-manual_en-us.pdf",
+      "sha256": "87148cc3c6f53e4d11feff3f3ac350663dedbf1e06c11ee1fc5369fa43816d45",
+      "taille_octets": 6271263,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 8
+    },
+    {
+      "document_id": "dell_r430_manuel",
+      "fichier": "documents/serveurs/r430ownersmanual-en-us.pdf",
+      "nom_fichier": "r430ownersmanual-en-us.pdf",
+      "titre": "Dell PowerEdge R430 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R430"
+      ],
+      "perimetre": "PowerEdge R430 ; configurations couvertes par ce manuel.",
+      "nb_pages": 188,
+      "langue": "en",
+      "version": "Rev. A07",
+      "source": "https://dl.dell.com/topicspdf/poweredge-r430_owners-manual_en-us.pdf",
+      "sha256": "4e1d69084a61ddf13f1ab15da3b7270a5b4026ca95c76743c0d96907d3cd3d75",
+      "taille_octets": 9275165,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 8
+    },
+    {
+      "document_id": "dell_r520_manuel",
+      "fichier": "documents/serveurs/poweredge-r520_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-r520_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge R520 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R520"
+      ],
+      "perimetre": "PowerEdge R520 ; configurations couvertes par ce manuel.",
+      "nb_pages": 126,
+      "langue": "en",
+      "version": "Rev. A04",
+      "source": "https://dl.dell.com/topicspdf/poweredge-r520_owners-manual_en-us.pdf",
+      "sha256": "2ba12896e4a9be8e39d513c850c9e7e6a4756f0fc262701d0bed143a0bb1d655",
+      "taille_octets": 7546062,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 8
+    },
+    {
+      "document_id": "dell_r530_manuel",
+      "fichier": "documents/serveurs/poweredge-r530_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-r530_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge R530 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R530"
+      ],
+      "perimetre": "PowerEdge R530 ; configurations couvertes par ce manuel.",
+      "nb_pages": 182,
+      "langue": "en",
+      "version": "Rev. A03",
+      "source": "https://dl.dell.com/topicspdf/poweredge-r530_owners-manual_en-us.pdf",
+      "sha256": "65283cd7923f40b7202541d492daa1661205ba71c59853606c0c89b13c809f3f",
+      "taille_octets": 8572524,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 9
+    },
+    {
+      "document_id": "dell_r620_manuel",
+      "fichier": "documents/serveurs/poweredge-r620_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-r620_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge R620 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R620"
+      ],
+      "perimetre": "PowerEdge R620 ; configurations couvertes par ce manuel.",
+      "nb_pages": 131,
+      "langue": "en",
+      "version": "Rev. A06",
+      "source": "https://dl.dell.com/topicspdf/poweredge-r620_owners-manual_en-us.pdf",
+      "sha256": "46aaa4fb8f5ef1f6eb9ff813ccb85f5f64c3ff9520229a7ab839b9e40f7bf813",
+      "taille_octets": 5924727,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 7
+    },
+    {
+      "document_id": "dell_r720_manuel",
+      "fichier": "documents/serveurs/poweredge-r720_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-r720_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge R720 and R720xd - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R720",
+        "DELL_R720XD"
+      ],
+      "perimetre": "PowerEdge R720 et R720xd ; configurations couvertes par ce manuel.",
+      "nb_pages": 151,
+      "langue": "en",
+      "version": "Rev. A07",
+      "source": "https://dl.dell.com/topicspdf/poweredge-r720_owners-manual_en-us.pdf",
+      "sha256": "f3a938634a46a9d7567f5c194caf3826cc914c03090e4532844f495abe683278",
+      "taille_octets": 8364479,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 8
+    },
+    {
+      "document_id": "dell_t320_manuel",
+      "fichier": "documents/serveurs/poweredge-t320_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-t320_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge T320 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_T320"
+      ],
+      "perimetre": "PowerEdge T320 ; configurations couvertes par ce manuel.",
+      "nb_pages": 153,
+      "langue": "en",
+      "version": "Rev. A05",
+      "source": "https://dl.dell.com/topicspdf/poweredge-t320_owners-manual_en-us.pdf",
+      "sha256": "836af651de0dc3070775cd7c0a6992a45a31f780ceacb18e60fd50ad1f4cb7bf",
+      "taille_octets": 9395285,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 8
+    },
+    {
+      "document_id": "dell_t330_manuel",
+      "fichier": "documents/serveurs/poweredge-t330_owners-manual_en-us.pdf",
+      "nom_fichier": "poweredge-t330_owners-manual_en-us.pdf",
+      "titre": "Dell PowerEdge T330 - Owner’s Manual",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_T330"
+      ],
+      "perimetre": "PowerEdge T330 ; configurations couvertes par ce manuel.",
+      "nb_pages": 164,
+      "langue": "en",
+      "version": "Rev. A10",
+      "source": "https://dl.dell.com/topicspdf/poweredge-t330_owners-manual_en-us.pdf",
+      "sha256": "48269b939ad1effabec1bc218fbf8b8e2939a7dabb8a08fad1f19baeeb06289a",
+      "taille_octets": 9805825,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 9
+    },
+    {
+      "document_id": "dell_r720_guide_technique",
+      "fichier": "documents/serveurs/all-products_esuprt_ser_stor_net_esuprt_poweredge_poweredge-r720_reference-guide_en-us.pdf",
+      "nom_fichier": "all-products_esuprt_ser_stor_net_esuprt_poweredge_poweredge-r720_reference-guide_en-us.pdf",
+      "titre": "Dell PowerEdge R720 and R720xd - Technical Guide",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R720",
+        "DELL_R720XD"
+      ],
+      "perimetre": "R720 et R720xd ; guide technique, distinct du manuel propriétaire.",
+      "nb_pages": 65,
+      "langue": "en",
+      "version": "révision non explicitée dans les premières pages",
+      "source": "https://dl.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprt_poweredge/poweredge-r720_reference-guide_en-us.pdf",
+      "sha256": "2ef98db5274d10aa9cd47f6f6f20f139055fbe49fe4c35dc97cded6de47ac04d",
+      "taille_octets": 1132154,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 13
+    },
+    {
+      "document_id": "dell_perc9_guide",
+      "fichier": "documents/serveurs/all-products_esuprt_ser_stor_net_esuprtl_adapters_poweredge-rc-h830_user's guide_en-us.pdf",
+      "nom_fichier": "all-products_esuprt_ser_stor_net_esuprtl_adapters_poweredge-rc-h830_user's guide_en-us.pdf",
+      "titre": "Dell PowerEdge RAID Controller (PERC) 9 - User’s Guide",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "composant",
+      "series_documentees": [
+        "DELL_PERC9"
+      ],
+      "perimetre": "Cartes PERC 9 du guide : composant partagé, pas un modèle de serveur ; vérifier la carte installée avant application.",
+      "nb_pages": 128,
+      "langue": "en",
+      "version": "Rev. A05",
+      "source": "https://dl.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprtl_adapters/poweredge-rc-h830_User%27s%20Guide_en-us.pdf",
+      "sha256": "e20b9c592ae261283e70d599d9da46e487ff514cdb6c98cdceca3a40efc2cf87",
+      "taille_octets": 3698828,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 10
+    },
+    {
+      "document_id": "dell_r730_guide_technique",
+      "fichier": "documents/serveurs/Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf",
+      "nom_fichier": "Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf",
+      "titre": "Dell PowerEdge R730 and R730xd - Technical Guide",
+      "fabricant": "Dell",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "modèle",
+      "series_documentees": [
+        "DELL_R730",
+        "DELL_R730XD"
+      ],
+      "perimetre": "R730 et R730xd ; guide technique uniquement. Aucun manuel propriétaire R730 n’est présent.",
+      "nb_pages": 66,
+      "langue": "en",
+      "version": "v1.7 (nom du fichier fabricant)",
+      "source": "https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf",
+      "sha256": "61b2092c53b217377f92b18ab11abe024058891c06fa67a7359c4532c8ebb1eb",
+      "taille_octets": 2364739,
+      "present": true,
+      "synthetique": false,
+      "page_visuelle": 13
+    }
+  ]
+}

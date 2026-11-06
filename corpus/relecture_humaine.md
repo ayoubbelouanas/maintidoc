@@ -1,7 +1,3 @@
-# Relecture humaine obligatoire
+# Relecture humaine du corpus réel
 
-Les champs verifie_par de l’inventaire restent vides. L’assistant ne peut pas attester à la place d’Ayoub qu’il a relu les documents.
-
-Pour chaque PDF réellement relu, renseigner Ayoub dans verifie_par et les corrections effectivement apportées dans corrections. Contrôler notamment la fiction des messages MD, le modèle inconnu des photos, les deux paires contradictoires et les deux notes d’injection. Toute modification d’un PDF exige de vérifier à nouveau les pages et de reconstruire l’archive.
-
-Les documents techniques synthétiques ne sont pas des instructions constructeur. Les deux scans sont simulés pour OCR. Les photographies ont des attributions et licences spécifiques dans sources_et_droits.md et les fiches.
+L’inventaire contient les 33 véritables PDF, sans réécriture de leur contenu. Les champs verifie_par restent vides tant qu’Ayoub n’a pas validé les documents concernés. Contrôler le modèle, la configuration, l’énergie et les options de chaque notice. Renseigner les corrections de métadonnées effectivement réalisées ; ne pas prétendre modifier le contenu d’origine. Les trois guides non ajoutés sont hors inventaire. Les scans, la paire contradictoire et la note piégée demandés par le L1 ne sont pas encore constitués dans le lot actif.
