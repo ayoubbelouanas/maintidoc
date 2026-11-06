@@ -125,3 +125,6 @@ de redistribution de ces documents.
 - Date : 6 novembre 2026 ; outil : Codex, ReportLab, Poppler et pypdf.
 - Instruction mise en œuvre : « Produire un rapport français de 10 à 15 pages couvrant les six parties obligatoires dans l'ordre ; indiquer les volumes réels, les limites de la réutilisation, l'architecture, les trois flux, les ACL, au moins huit risques et l'organisation S2–S6. Ne déclarer ni validation humaine ni performance du prototype non réalisée. Préparer le ZIP selon les quatre éléments imposés et vérifier la bijection entre inventaire et fichiers. »
 - Le journal des contrôles techniques est conservé dans docs/controle_livraison.json dans les sources préparées pour GitHub. La relecture humaine et l'état réel de publication restent déclarés séparément.
+
+- Contrôles finaux supplémentaires : correction d’un motif de code non résolu dans les clés du tableau des messages ; les codes MD-F/MD-S ont été réinspectés dans les PDF. Le contrôle des sections du rapport a été rendu insensible à la casse des en-têtes. Une colonne de responsable a été ajoutée au tableau des risques.
+- Publication : les fichiers préparés ont été envoyés sur `codex/livraison-l1` dans le dépôt GitHub fourni ; la connexion Git existante du poste a permis l’envoi. Aucune clé ni aucun jeton n’a été affiché ou copié dans le projet.

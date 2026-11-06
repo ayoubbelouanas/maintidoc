@@ -523,17 +523,17 @@ Remise, contrôles et limites déclarées
 
 | Corpus | L1_MaintiDoc_BELOUANAS_Corpus/ - 40 PDF, inventaire, prompts et registre des droits |
 
-### Contrôles techniques à consigner
+### Contrôles techniques réalisés
 
-Contrôles techniques à consigner
+Contrôles techniques réalisés
 
-Vérifier noms et arborescence du ZIP, correspondance bijective fichiers/inventaire, empreintes distinctes, nombre de pages, absence de couche texte dans les deux PDF image, licences et attributions, rendu du rapport et absence de secrets. Le résultat réel est enregistré dans docs/controle_livraison.json après génération ; cette page ne prétend pas anticiper un test non exécuté.
+Les contrôles passent : noms et arborescence du ZIP, bijection entre les 40 fichiers et l’inventaire, empreintes distinctes, pages, deux PDF image sans couche texte, liens et attributions, rendu du rapport et recherche de motifs de secrets. Le journal détaillé est enregistré dans docs/controle_livraison.json. Ces contrôles ne remplacent pas la relecture humaine.
 
-### Deux étapes humaines avant le dépôt
+### Relecture et dépôt
 
-Deux étapes humaines avant le dépôt
+Relecture et dépôt
 
-1. Relire et corriger les documents puis compléter verifie_par et corrections. Les champs de relecture sont volontairement vides au moment de la préparation.<br/>2. Publier les fichiers préparés dans le dépôt GitHub fourni et vérifier son contenu depuis un compte extérieur. L’URL répond publiquement, mais cela ne prouve pas que les fichiers de cette remise y ont été envoyés.
+1. Relire et corriger les documents puis compléter verifie_par et corrections. Les champs de relecture sont volontairement vides au moment de la préparation.<br/>2. Vérifier la version à remettre après cette relecture. Les fichiers préparés sont publiés sur la branche codex/livraison-l1 du dépôt fourni. La publication ne constitue pas une validation humaine du corpus.
 
 ### Sources et audit
 

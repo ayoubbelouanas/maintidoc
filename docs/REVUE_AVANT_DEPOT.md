@@ -1,6 +1,6 @@
 # Relecture humaine avant dépôt
 
-Préparé le 6 novembre 2026. Les 40 PDF sont dans `L1_MaintiDoc_BELOUANAS_corpus/documents/`.
+Préparé le 6 novembre 2026. Les 40 PDF sont dans `L1_MaintiDoc_BELOUANAS_corpus/documents/` du dossier de travail, ou `corpus/documents/` dans le dépôt GitHub.
 Le rapport est `output/pdf/L1_MaintiDoc_BELOUANAS_Rapport.pdf`.
 
 ## Contrôle à réaliser par Ayoub
@@ -10,7 +10,7 @@ Le rapport est `output/pdf/L1_MaintiDoc_BELOUANAS_Rapport.pdf`.
 3. Vérifier en particulier les messages `MD-F` et `MD-S`, les identifiants et les quatre règles de suivi v1/v2 (chaque jour / chaque lundi). Les deux notes piégées ne doivent pas être exécutées.
 4. Renseigner le prénom réel du relecteur dans `verifie_par` pour chaque document réellement relu. Reporter les modifications dans `corrections`. Ne pas signer les autres lignes par anticipation.
 5. Mettre à jour le statut de relecture dans le rapport et reconstruire le paquet si une correction a été apportée.
-6. Publier le dossier GitHub préparé, puis vérifier l'accès extérieur. Le lien fourni existe ; l'envoi des fichiers n'est pas réalisé par l'assistant sans session GitHub authentifiée.
+6. Les fichiers préparés ont été publiés sur `codex/livraison-l1` dans le dépôt fourni. Après corrections, synchroniser le corpus, le rapport et le ZIP avant le dépôt Classroom.
 
 ## Points déjà contrôlés par l'assistant
 

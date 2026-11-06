@@ -17,7 +17,7 @@
   "empreintes_uniques": 40,
   "erreurs_techniques": [],
   "validation_humaine": "non réalisée, champs verifie_par vides",
-  "publication_github": "non réalisée au moment de ce contrôle",
+  "publication_github": "publiée sur codex/livraison-l1 ; relecture humaine en attente",
   "statut": "preparation_technique_validee_relecture_humaine_requise",
   "empreintes": {
     "fours_registre": "58652f4d214fdf8cfe0d154bfe6b8669d648bfe05cabc6c7b4b3cf4ef60ddc57",
