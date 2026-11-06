@@ -431,7 +431,7 @@ Risques et mesures initiales
 
 Échelles : probabilité et impact de 1 (faible) à 3 (élevé). Responsable : Ayoub BELOUANAS pour chaque ligne.
 
-| Risque / catégorie | P | I | Mesure prévue | Responsable |
+| Risque / catégorie | P | I | Mesure prévue | Resp. |
 
 | Hallucination / technique | 2 | 3 | Contrôler appui et citations ; tester abstention et questions sans source. | Ayoub |
 
