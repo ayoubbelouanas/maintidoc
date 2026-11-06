@@ -269,69 +269,91 @@ Le rapport décrit un état réel du corpus, pas une conformité complète à to
 
 ## 3. Architecture cible - Blocs fonctionnels et contrôles
 
-Schéma de haut niveau ; sources Mermaid conservées dans docs/diagrammes/.
+Architecture prévue ; flèches numérotées et données échangées détaillées ci-dessous.
 
 
 
 Blocs fonctionnels et contrôles
 
-Schéma de haut niveau ; sources Mermaid conservées dans docs/diagrammes/.
+Architecture prévue ; flèches numérotées et données échangées détaillées ci-dessous.
 
-Depuis l’orchestration : recherche autorisée, analyse visuelle et consultation MCP, selon le besoin de la demande.
+```mermaid
+flowchart TB
+    UI[Interface] -->|1 : question, photo, identité| API[API - C1 identité et droits]
+    API -->|2 : demande autorisée, groupes serveur| O[Orchestration]
+    O <-->|3 : image et preuves / observations| VLM[Modèle vision-langage]
+    O -->|4 : question, image, groupes| R[Recherche et reranking - C2 ACL]
+    R <-->|5 : requête filtrée / éléments autorisés| S[Stockage - C3 droits fichiers et images]
+    R -->|6 : passages et figures classés| VLM
+    VLM -->|7 : réponse proposée et preuves| VAL[Validation - C5 existence et appui des citations]
+    VAL -->|8 : réponse sourcée ou clarification| UI
+    UI -->|9 : brouillon exact présenté| H[Validation humaine - C6]
+    H -->|10 : contenu approuvé, identité, jeton serveur| MCP[MCP - C4 droits, approbation, idempotence]
+    O <-->|11 : paramètres / résultats autorisés| MCP
+    MCP <-->|12 : historique, ticket et clé idempotence| S
+    C[Corpus PDF et images + inventaire] -->|13 : fichiers et métadonnées| ING[Ingestion : extraction, OCR, découpage, embeddings]
+    ING -->|14 : originaux, éléments, vecteurs et ACL| S
+```
 
-### Branche ingestion
+| Flèches | Données qui circulent |
 
-Branche ingestion
+| 1 - 2 | Question, photo et identité ; puis demande autorisée et groupes serveur. |
 
-### Branche outils
+| 3 - 4 | Image / preuves vers le VLM, observations en retour ; question et groupes vers la recherche. |
 
-Branche outils
+| 5 - 6 | Requête avec filtre ACL / éléments autorisés ; preuves classées vers le VLM. |
 
-### Action sensible
+| 7 - 8 | Réponse proposée et preuves ; réponse vérifiée avec sources, ou clarification. |
 
-Action sensible
+| 9 - 10 | Brouillon présenté puis contenu exact approuvé, identité et jeton d’approbation. |
 
-Les flèches représentent respectivement question et identité ; candidats et preuves ; réponse et citations ; éléments indexés et métadonnées ; paramètres et résultats d’outil ; contenu approuvé et clé d’idempotence. Les autorisations sont revérifiées à l’ouverture des originaux et côté MCP.
+| 11 - 12 | Paramètres / résultats autorisés MCP ; lecture historique ou écriture ticket et clé d’idempotence. |
 
-La validation des citations combine existence du document, localisation et appui de l’affirmation. Une vérification de format seule ne garantit pas une réponse fondée.
+| 13 - 14 | PDF, images et inventaire ; originaux, éléments, embeddings, métadonnées et ACL. |
 
-
-
-## 3. Architecture cible - Fiches des blocs et hypothèses
+C1 : identité et droits API. C2 : filtre avant recherche et contrôle des candidats. C3 : droits revérifiés à l’ouverture des fichiers/images. C4 : droits, approbation et idempotence MCP. C5 : citation existante et affirmation soutenue. C6 : décision humaine avant toute création.
 
 
 
+## 3. Architecture cible - Fiches des blocs
+
+Chaque ligne précise le rôle, les entrées, les sorties et un outil envisagé, non encore validé.
 
 
-Fiches des blocs et hypothèses
 
-| Bloc / outil envisagé | Entrées → sorties et rôle |
+Fiches des blocs
 
-| Interface - Streamlit | Question, image, approbation → requête et réponse lisible avec sources. |
+Chaque ligne précise le rôle, les entrées, les sorties et un outil envisagé, non encore validé.
 
-| API - FastAPI | Identité et requête → opération autorisée et groupes fiables, ou refus. |
+| Bloc | Rôle en une phrase | Entrées | Sorties | Outil envisagé |
 
-| Orchestration - LangGraph / LangChain | Demande autorisée et état → parcours de recherche, appel MCP ou clarification. |
+| Interface | Recueille la demande et présente les résultats. | Question, photo, décision humaine | Requête ; réponse sourcée ; approbation | Streamlit |
 
-| Ingestion - PyMuPDF / OCR local | PDF et inventaire → passages, tableaux, figures et métadonnées. |
+| API | Authentifie et autorise chaque opération. | Identité, requête | Groupes fiables ; opération autorisée ou refus | FastAPI |
 
-| Recherche - Qdrant / encodeurs | Question, image et ACL → candidats texte/image ; fusion de rangs possible. |
+| Orchestration | Pilote les étapes et l’attente humaine. | Demande autorisée, état, résultats | Recherche, appel outil, clarification | LangGraph / LangChain |
 
-| Reranker multilingue | Question et passages autorisés → classement ; adaptation ciblée en S5. |
+| Ingestion | Transforme les fichiers en éléments recherchables. | PDF, images, inventaire | Texte, figures, vecteurs, métadonnées | PyMuPDF ; Tesseract pour OCR |
 
-| VLM - Qwen2.5-VL-7B envisagé | Image et preuves → observations et réponse proposée ; modèle inchangé. |
+| Recherche | Retrouve et classe les preuves autorisées. | Question, image, groupes | Passages et figures classés | Qdrant ; encodeurs ; reranker multilingue |
 
-| Validation - Pydantic + contrôles | Réponse et preuves → réponse sourcée, abstention ou clarification. |
+| Vision-langage | Décrit la photo et rédige avec les preuves. | Image, question, contexte autorisé | Observations, réponse proposée, incertitudes | Qwen2.5-VL-7B-Instruct |
 
-| MCP de démonstration | Identité, équipement et paramètres → historique, tickets, création approuvée. |
+| Citations | Vérifie la localisation et l’appui des affirmations. | Réponse et preuves récupérées | Réponse acceptée ou clarification | Pydantic ; contrôles d’appui |
 
-| Stockage - PostgreSQL / MinIO | Métadonnées, originaux et événements → données persistantes autorisées. |
+| MCP | Expose les opérations de maintenance autorisées. | Identité, équipement, paramètres, approbation | Historique ; tickets ; résultat idempotent | Serveur MCP de démonstration |
 
-### Points à vérifier en semaines 2 et 3
+| Stockage | Conserve les données et contrôle leur accès. | Originaux, index, tickets, journaux | Fichiers et données autorisés persistants | MinIO ; PostgreSQL ; Qdrant |
 
-Points à vérifier en semaines 2 et 3
+| Validation humaine | Autorise un ticket après lecture du contenu exact. | Brouillon complet présenté | Approbation liée au contenu ou refus | Écran Streamlit ; jeton serveur |
 
-Fixer les versions et licences des outils ; mesurer mémoire et latence sur la RTX 3080 10 Go ; choisir l’OCR et la stratégie de découpage ; tester embeddings multilingues et recherche d’une preuve anglaise par une question française ; contrôler l’appui sémantique des citations et la reprise après attente d’approbation. L1 n’annonce aucune compatibilité mesurée.
+### Hypothèses et questions ouvertes - S2 à S3
+
+Hypothèses et questions ouvertes - S2 à S3
+
+Le 7B quantifié tiendra-t-il sur 10 Go de VRAM avec image et contexte ? Mesurer le pic mémoire et la latence ; réduire résolution/contexte ou choisir un VLM plus petit si nécessaire. Faut-il un OCR pour tous les documents ? Prévoir extraction native sur PDF texte et OCR des seules pages image ; vérifier la qualité page par page.
+
+Quel découpage préserve tableaux et renvois ? Comparer les passages sur quelques notices. Une question française retrouve-t-elle une preuve anglaise ? Tester les encodeurs multilingues. Comment vérifier l’appui d’une citation ? Combiner références exactes, comparaison au passage et revue humaine d’un échantillon. Versions et licences des outils restent à figer en S2.
 
 
 
@@ -383,13 +405,13 @@ Requête et contrôle d’accès
 
 Parcours complet
 
-1. L’API authentifie l’utilisateur fictif et obtient ses groupes côté serveur.<br/>2. Le VLM décrit les indices visibles sans attribuer une cause non observée.<br/>3. Si l’équipement n’est pas établi, le workflow demande sa référence avant toute procédure spécifique.<br/>4. Les recherches textuelle et visuelle portent uniquement sur les documents autorisés ; les candidats sont fusionnés et reclassés.<br/>5. Un appel MCP utile consulte l’historique de l’équipement confirmé, après autorisation côté outil.<br/>6. Le VLM formule la réponse en français par défaut à partir des preuves françaises ou anglaises. Codes, références de pièces et unités restent inchangés. Le validateur contrôle la source originale, sa version, sa page et son appui.<br/>7. L’interface affiche la réponse, les limites et les sources ; leur ouverture déclenche un nouveau contrôle d’accès.
+Exemple : un technicien serveurs demande avec une photo « Que signifie ce voyant orange sur mon R720 ? ». Le parcours cible est le suivant.<br/>1. L’API authentifie l’utilisateur fictif et obtient ses groupes côté serveur.<br/>2. Le VLM décrit les indices visibles sans attribuer une cause non observée.<br/>3. Si l’équipement n’est pas établi, le workflow demande sa référence avant toute procédure spécifique.<br/>4. Les recherches textuelle et visuelle portent uniquement sur les documents autorisés ; les candidats sont fusionnés et reclassés.<br/>5. Un appel MCP utile consulte l’historique de l’équipement confirmé, après autorisation côté outil.<br/>6. Le VLM formule la réponse en français par défaut à partir des preuves françaises ou anglaises. Codes, références de pièces et unités restent inchangés. Le validateur contrôle la source originale, sa version, sa page et son appui.<br/>7. L’interface affiche la réponse, les limites et les sources ; leur ouverture déclenche un nouveau contrôle d’accès.
 
 | Groupe | Périmètre autorisé |
 
-| techniciens_fours | Les vingt notices RATIONAL attribuées à ce groupe et explicitement partagées avec responsables. |
+| techniciens_fours | 21 PDF : vingt notices RATIONAL et la note piégée S5 ; tous partagés avec responsables. |
 
-| techniciens_serveurs | Les treize PDF Dell attribués à ce groupe ; pas les documents fours. |
+| techniciens_serveurs | 15 PDF : treize sources Dell et les deux versions S5 ; tous partagés avec responsables. Aucun document fours. |
 
 | responsables | Deux familles explicitement partagées. La note de test est accessible au groupe fours pour qu’il puisse rencontrer l’injection ; l’accès aux documents serveurs reste interdit à ce groupe. |
 
@@ -449,31 +471,31 @@ Risques et mesures initiales
 
 Échelles : probabilité et impact de 1 (faible) à 3 (élevé). Responsable : Ayoub BELOUANAS pour chaque ligne.
 
-| Risque / catégorie | P | I | Mesure prévue | Resp. |
+| Risque | Catégorie | P | I | Mesure prévue | Resp. |
 
-| Hallucination / technique | 2 | 3 | Contrôler appui et citations ; tester abstention et questions sans source. | Ayoub |
+| Hallucination et citations non fondées | technique | 2 | 3 | Contrôler appui et citations ; tester abstention et questions sans source. | Ayoub |
 
-| Fuite entre groupes / sécurité | 2 | 3 | Filtre avant recherche, ouverture protégée, contrôle MCP. | Ayoub |
+| Fuite entre groupes | sécurité | 2 | 3 | Filtre avant recherche, ouverture protégée, contrôle MCP. | Ayoub |
 
-| Ticket non approuvé / sécurité | 2 | 3 | Approbation serveur liée au contenu exact et à l’utilisateur. | Ayoub |
+| Ticket non approuvé | sécurité | 2 | 3 | Approbation serveur liée au contenu exact et à l’utilisateur. | Ayoub |
 
-| Ticket dupliqué / technique | 2 | 2 | Idempotence côté stockage et tests de répétition. | Ayoub |
+| Ticket dupliqué | technique | 2 | 2 | Idempotence côté stockage et tests de répétition. | Ayoub |
 
-| Injection de prompt / sécurité | 2 | 3 | Documents traités comme données ; outils limités ; tests réservés. | Ayoub |
+| Injection de prompt | sécurité | 2 | 3 | Documents traités comme données ; outils limités ; tests réservés. | Ayoub |
 
-| Erreur de métadonnées / données | 3 | 3 | Contrôler titres, chemins, séries, révisions et pages des PDF réels. | Ayoub |
+| Erreurs IA dans le corpus | données | 3 | 3 | Relire les trois tests synthétiques et les métadonnées aidées par IA ; comparer aux sources et tracer les corrections. | Ayoub |
 
-| Droits de réutilisation / données | 3 | 3 | Conserver les copyrights ; ne pas publier les PDF ou leurs rendus sans autorisation. | Ayoub |
+| Droits de réutilisation | données | 3 | 3 | Conserver les copyrights ; ne pas publier les PDF ou leurs rendus sans autorisation. | Ayoub |
 
-| Mémoire GPU insuffisante / technique | 2 | 3 | Mesurer tôt ; quantifier et prévoir un VLM plus petit. | Ayoub |
+| Mémoire GPU insuffisante | technique | 2 | 3 | Mesurer tôt ; quantifier et prévoir un VLM plus petit. | Ayoub |
 
-| OCR erroné / données | 2 | 2 | Comparer au PDF image, conserver positions et signaler l’incertitude. | Ayoub |
+| OCR erroné | données | 2 | 2 | Comparer au PDF image, conserver positions et signaler l’incertitude. | Ayoub |
 
-| Confusion modèle/version / données | 3 | 3 | Filtrer la configuration ; comparer versions ; demander le modèle. | Ayoub |
+| Confusion modèle/version | données | 3 | 3 | Filtrer la configuration ; comparer versions ; demander le modèle. | Ayoub |
 
-| Fuite entraînement/test / données | 2 | 3 | Séparer les documents avant génération des triplets du reranker. | Ayoub |
+| Fuite entraînement/test | données | 2 | 3 | Séparer les documents avant génération des triplets du reranker. | Ayoub |
 
-| Délai et relecture / organisation | 3 | 3 | Garder les 33 sources et trois tests ; traiter les exigences ouvertes et réserver la relecture finale. | Ayoub |
+| Délai et relecture | organisation | 3 | 3 | Garder les 33 sources et trois tests ; traiter les exigences ouvertes et réserver la relecture finale. | Ayoub |
 
 Ces scores sont des estimations de cadrage et non des résultats d’expérience. Le suivi de chaque risque sera mis à jour pendant les semaines 2 à 6, avec les incidents rencontrés et la mesure appliquée.
 

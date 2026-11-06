@@ -1,26 +1,15 @@
 flowchart TB
-    U[Utilisateur fictif] -->|Question et image| UI[Interface]
-    UI -->|Requête et identité| API[API : contrôle identité et droits]
-    API -->|Demande autorisée et groupes| O[Orchestration]
-    O -->|Question, image et preuves| VLM[Modèle vision-langage]
-    VLM -->|Observations, réponse proposée, incertitudes| O
-    O -->|Recherche filtrée par groupes| R[Recherche texte et images]
-    R -->|Candidats autorisés| RR[Reranking textuel]
-    RR -->|Passages et figures classés| O
-    C[Corpus et inventaire relus] -->|Documents et métadonnées| ING[Ingestion et OCR éventuel]
-    ING -->|Représentations et permissions| IDX[Index de recherche]
-    ING -->|Originaux et métadonnées| S[Stockage]
-    R -->|Requête filtrée| IDX
-    IDX -->|Éléments autorisés| R
-    O -->|Historique ou tickets : identité et équipement| MCP[Serveur MCP : contrôle des autorisations]
-    MCP <-->|Données fictives de maintenance| S
-    MCP -->|Résultats autorisés| O
-    O -->|Réponse et preuves récupérées| VAL[Vérification des citations et du format]
-    VAL -->|Réponse sourcée ou clarification| UI
-    UI -->|Ouverture d'une source| ACC[Contrôle des droits sur le document ou l'image]
-    ACC -->|Accès autorisé| S
-    O -->|Brouillon du ticket| UI
-    UI -->|Approbation du contenu exact| API
-    API -->|Identité, contenu et approbation| MCP
-    MCP -->|Vérifier approbation et idempotence| CREATE[Création du ticket]
-    CREATE -->|Ticket et clé d'idempotence| S
+    UI[Interface] -->|1 : question, photo, identité| API[API - C1 identité et droits]
+    API -->|2 : demande autorisée, groupes serveur| O[Orchestration]
+    O <-->|3 : image et preuves / observations| VLM[Modèle vision-langage]
+    O -->|4 : question, image, groupes| R[Recherche et reranking - C2 ACL]
+    R <-->|5 : requête filtrée / éléments autorisés| S[Stockage - C3 droits fichiers et images]
+    R -->|6 : passages et figures classés| VLM
+    VLM -->|7 : réponse proposée et preuves| VAL[Validation - C5 existence et appui des citations]
+    VAL -->|8 : réponse sourcée ou clarification| UI
+    UI -->|9 : brouillon exact présenté| H[Validation humaine - C6]
+    H -->|10 : contenu approuvé, identité, jeton serveur| MCP[MCP - C4 droits, approbation, idempotence]
+    O <-->|11 : paramètres / résultats autorisés| MCP
+    MCP <-->|12 : historique, ticket et clé idempotence| S
+    C[Corpus PDF et images + inventaire] -->|13 : fichiers et métadonnées| ING[Ingestion : extraction, OCR, découpage, embeddings]
+    ING -->|14 : originaux, éléments, vecteurs et ACL| S
