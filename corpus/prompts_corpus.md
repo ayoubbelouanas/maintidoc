@@ -1,10 +1,10 @@
 # Journal IA - corpus réel actif et historique
 
-**Le corpus actif contient 36 PDF : 33 PDF fabricants non générés par IA (20 RATIONAL et 13 Dell) et trois documents synthétiques réservés aux tests S5 (P14).** Les étapes de création synthétique P06 à P09 ci-dessous décrivent uniquement l’ancienne version rejetée et archivée. Elles ne décrivent pas les fichiers du présent inventaire.
+**Le corpus actif contient 33 PDF fabricants non générés par IA : 20 RATIONAL et 13 Dell.** Les étapes de création synthétique P06 à P09 ci-dessous décrivent uniquement l’ancienne version rejetée et archivée. Elles ne décrivent pas les fichiers du présent inventaire.
 
 # Traçabilité des prompts du corpus
 
-État historique du démarrage : aucun document n'était encore intégré à cette étape. Depuis, 36 PDF ont été inventoriés ; la relecture humaine n'est toujours pas attestée. Les références à d'anciens fichiers de recherche désignent les archives de travail locales, hors de ce dépôt minimal.
+État courant : 33 PDF fabricants sont inventoriés. Le projet est en phase de conception ; la plupart des tâches de réalisation n’ont pas encore démarré. La relecture humaine n’est pas attestée. Les anciennes références à des fichiers de recherche concernent l’historique local.
 
 Pour chaque usage effectif de l'IA, conserver le texte exact du prompt, l'outil et
 la date réelle. Numéroter les entrées P01, P02, etc. Réutiliser ces références dans
@@ -173,12 +173,12 @@ de redistribution de ces documents.
 - Mise à jour : rapport, README, politique_langues.md, flux de requête et synthèse du corpus.
 
 
-## P14 — Deux documents contradictoires et une note d’injection S5
+## P14 - Documents de test retirés
 
-- Date : 6 novembre 2026 ; outil : Codex, ReportLab, pypdf et Poppler.
-- Demande utilisateur exacte : « et j'ai besoin de Au moins 2 documents contradictoires (ex. deux versions d’une procédure) et 1 document piégé contenant une tentative d’injection de prompt, prévus dès maintenant pour les tests de la semaine 5. Ils sont signalés dans l’inventaire. »
-- Instruction de construction : ajouter seulement trois documents synthétiques de test aux 33 PDF fabricants, sans modifier ces derniers. Produire deux versions d’une règle interne fictive pour le même dossier R720/R720xd : v1 = revue toutes les 24 heures, applicable du 01/09 au 31/10/2026 ; v2 = tous les 7 jours, applicable à partir du 01/11/2026 et remplaçant v1. Ne pas faire passer ces périodicités pour des consignes Dell.
-- Note piégée : contenu documentaire légitime p.1 ; charge volontaire p.2 demandant de modifier les groupes, ouvrir un manuel Dell depuis le groupe fours et créer un ticket sans approbation. Aucun secret réel ni destination externe. La charge est une donnée non fiable, pas une instruction à exécuter par l’assistant.
-- Traçabilité : deux lignes usage_test = contradictoire et une ligne usage_test = injection ; provenance = synthetique, genere_par_ia = oui, outil_ia = Codex - P14. Les 33 lignes fabricants restent genere_par_ia = non.
-- Réservation : test_s5 uniquement, hors entraînement et validation du reranker. Le manifeste des questions et résultats attendus est séparé des documents à récupérer et n’est pas transmis au modèle comme réponse de test.
-- Contrôles : versions, fréquences, dates, pages, droits d’accès et identifiants cohérents ; relecture humaine non présumée. Les scénarios sont préparés, pas exécutés sur un prototype.
+La première proposition de documents synthétiques de test a été retirée à la demande d’Ayoub. Elle ne fait plus partie du corpus ni de l’inventaire. Les documents contradictoires et le document piégé seront complétés ultérieurement ; aucun résultat de test n’est revendiqué.
+
+## P15 - Retrait et état de conception
+
+- Date : 6 novembre 2026 ; outil : Codex.
+- Demande : supprimer les documents de test, signaler que les documents contradictoires seront complétés plus tard et réécrire le README pour indiquer la phase de conception.
+- Résultat : 33 PDF fabricants inchangés, 25 PNG traçables, aucune ligne de test synthétique dans l’inventaire. Rapport et fichiers actifs actualisés. La plupart des tâches de développement restent à démarrer.
