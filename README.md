@@ -1,3 +1,15 @@
+# MAINTiDOC - correction du corpus technique réel
+
+**Décision active du 6 novembre 2026 : remplacer le corpus technique synthétique par des PDF réels de fabricants, sur plusieurs modèles RATIONAL et Dell.**
+
+Voir [les 30 liens de publications réelles vérifiées](docs/LIENS_PDF_REELS.md) : vingt notices RATIONAL téléchargées localement et dix manuels complets Dell à télécharger manuellement. Aucun PDF de fabricant n'est publié ici sans permission de redistribution établie.
+
+Le dossier `corpus/`, le rapport et le ZIP précédemment préparés décrivent encore le lot synthétique historique. Ils ne constituent pas le livrable corrigé demandé. Le dossier de travail local `corpus_reel_candidats/` contient les vrais fichiers disponibles et le catalogue détaillé des liens.
+
+---
+
+## Version précédente conservée pour historique
+
 # MAINTiDOC - Livrable 1
 
 **Équipe : BELOUANAS - Ayoub BELOUANAS (individuel), EMSI.**
