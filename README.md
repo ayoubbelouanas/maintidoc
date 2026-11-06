@@ -1,7 +1,7 @@
 # MAINTiDOC
 
-Projet du module Generative AI, EMSI. **Ayoub BELOUANAS**, travail individuel.
-État au 6 novembre 2026. Architecture cible : prototype non encore implémenté.
+Je réalise **MAINTiDOC** dans le cadre du module Generative AI à l’EMSI.
+**Ayoub BELOUANAS** - travail individuel.
 
 ## Structure du dépôt
 
@@ -27,13 +27,17 @@ L'[inventaire](corpus/inventaire.csv) décrit les 33 PDF du dépôt, avec leurs 
 
 ## Corpus et disponibilité dans ce dépôt
 
-Le dépôt comporte **33 PDF fabricants** :
+J’ai retenu **33 PDF fabricants** :
 - **fours** : 20 notices RATIONAL (iCombi Pro, iCombi Classic, SelfCookingCenter, iHexagon) ;
 - **serveurs** : 13 PDF Dell PowerEdge/PERC 9.
 
 Les 13 PDF Dell sont en anglais. Le système devra répondre en français par défaut, à partir de preuves françaises ou anglaises, et en anglais sur demande, en conservant les codes, unités et citations des pages originales.
 
-**Les 33 PDF et les 25 aperçus PNG sont présents dans ce dépôt**, à la demande d'Ayoub, pour le projet pédagogique. Les PDF fabricants proviennent de publications publiques Dell et RATIONAL ; ils conservent leurs mentions de copyright. Leur disponibilité publique ne constitue pas une licence ouverte ; aucune permission générale de redistribution n'est revendiquée. Le champ `provenance` de l'inventaire indique les sources précises et les chemins correspondent aux fichiers publiés. Le [registre des images](corpus/images/tracabilite_images.csv) conserve la correspondance entre chaque aperçu, le PDF d'origine, sa page physique et ses empreintes. Les aperçus sont des pages illustrées, pas des photographies isolées.
+J’ai conservé les noms et le contenu des 33 PDF d’origine. Les 25 PNG sont des aperçus de pages illustrées ; ce ne sont pas des photographies isolées. Le champ `provenance` de l’inventaire indique les sources précises. Le [registre des images](corpus/images/tracabilite_images.csv) relie chaque PNG au PDF source, à sa page physique et à ses empreintes.
+
+## Licences et usage académique
+
+J’utilise le corpus pour un projet académique non commercial, en conservant les documents et leurs mentions de copyright. Les [conditions Dell](https://www.dell.com/fr-fr/legal/lp/site-terms-of-use) permettent l’usage personnel non commercial sous réserve de préserver le contenu et les mentions de propriété. Les [mentions légales RATIONAL](https://portal.rational-online.com/fs4p/fr/footernavigation/impressum/impressum.php) exigent une autorisation expresse pour la reproduction dans d’autres publications. Je distingue l’usage pédagogique de la republication publique, sans assimiler ces documents à une licence ouverte.
 
 ## Accès prévu
 
@@ -45,8 +49,8 @@ Contrôles prévus à l'API, avant la recherche, à l'ouverture des sources et c
 
 ## Tests réservés à la semaine 5
 
-Les documents contradictoires seront complétés ultérieurement. Le document piégé et les scénarios de test restent également à préparer. Les futurs documents retenus seront signalés dans l'inventaire et exclus de l'entraînement et de la validation du reranker. Aucun test du prototype n'a démarré.
+Je compléterai ultérieurement les documents contradictoires, le document piégé et les scénarios de test. Je signalerai les futurs documents dans l’inventaire et les réserverai aux tests, hors entraînement et validation du reranker. Les tests du prototype n’ont pas encore démarré.
 
 ## État et limites
 
-Le projet est actuellement en phase de conception. La plupart des tâches de réalisation n'ont pas encore démarré.
+Je suis actuellement en phase de conception. La plupart des tâches de réalisation n’ont pas encore démarré.
