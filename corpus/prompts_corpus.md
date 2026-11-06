@@ -1,12 +1,10 @@
 # Journal IA - corpus réel actif et historique
 
-**Le corpus actif contient 33 PDF fabricants non générés par IA : 20 RATIONAL et 13 Dell.** Les étapes de création synthétique P06 à P09 ci-dessous décrivent uniquement l’ancienne version rejetée et archivée. Elles ne décrivent pas les fichiers du présent inventaire.
+**Le corpus actif contient 36 PDF : 33 PDF fabricants non générés par IA (20 RATIONAL et 13 Dell) et trois documents synthétiques réservés aux tests S5 (P14).** Les étapes de création synthétique P06 à P09 ci-dessous décrivent uniquement l’ancienne version rejetée et archivée. Elles ne décrivent pas les fichiers du présent inventaire.
 
 # Traçabilité des prompts du corpus
 
-Statut : aucun document n'a encore été intégré au corpus ni validé par l'équipe.
-Un premier repérage de sources publiques a été réalisé ; voir P01 ci-dessous.
-Les documents proposés dans `docs/plan_corpus.md` sont un plan, pas un corpus constitué.
+État historique du démarrage : aucun document n'était encore intégré à cette étape. Depuis, 36 PDF ont été inventoriés ; la relecture humaine n'est toujours pas attestée. Les références à d'anciens fichiers de recherche désignent les archives de travail locales, hors de ce dépôt minimal.
 
 Pour chaque usage effectif de l'IA, conserver le texte exact du prompt, l'outil et
 la date réelle. Numéroter les entrées P01, P02, etc. Réutiliser ces références dans

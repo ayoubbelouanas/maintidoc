@@ -1,3 +1,0 @@
-# Relecture humaine du corpus réel
-
-L’inventaire contient les 33 véritables PDF fabricants et les trois nouveaux documents synthétiques de test, sans réécriture de leur contenu. Les champs verifie_par restent vides tant qu’Ayoub n’a pas validé les documents concernés. Contrôler le modèle, la configuration, l’énergie et les options de chaque notice. Renseigner les corrections de métadonnées effectivement réalisées ; ne pas prétendre modifier le contenu d’origine. Les trois guides non ajoutés sont hors inventaire. Les scans sources restent à constituer. La paire contradictoire et la note piégée sont préparées ; relire leurs dates, fréquences et charges en tant que données de test, sans exécuter les injonctions.
