@@ -1,20 +1,25 @@
 {
   "date": "2026-11-06",
-  "documents": 33,
+  "documents": 36,
+  "pdf_fabricants": 33,
+  "pdf_tests_synthetiques": 3,
+  "documents_contradictoires": 2,
+  "documents_injection": 1,
+  "tests_s5_execution": "non exécutée",
   "rational": 20,
   "dell": 13,
   "familles": {
-    "fours_mixtes_professionnels": 20,
-    "serveurs_informatiques": 13
+    "fours_mixtes_professionnels": 21,
+    "serveurs_informatiques": 15
   },
   "langues": {
-    "fr": 20,
+    "fr": 23,
     "en": 13
   },
   "colonnes_inventaire": 20,
   "noms_sources_conserves": true,
   "inventaire_et_fichiers_bijectifs": true,
-  "empreintes_uniques": 33,
+  "empreintes_uniques": 36,
   "pdf_originaux_inchanges": true,
   "copie_de_remise_synchronisee": true,
   "apercus_png_tracables": 25,
@@ -29,11 +34,9 @@
   "exigences_restantes": [
     "droits de réutilisation et de remise",
     "relecture humaine",
-    "deux scans sources",
-    "deux documents contradictoires",
-    "un document d’injection"
+    "deux scans sources"
   ],
-  "publication": "métadonnées et liens uniquement ; PDF et aperçus fabricants non publiés",
+  "publication": "métadonnées, liens et trois PDF synthétiques S5 ; 33 PDF et aperçus fabricants non publiés",
   "empreintes": {
     "rational_mi_2505": "b43412e9145783fadc4bac0275ff67f889cd9f8827355fe463a1defd94fd3036",
     "rational_mi_2315": "e98569361b8dae5468b259aec4cc67c10a5b4e80183fadabc44ba9263eafdf73",
@@ -67,14 +70,19 @@
     "dell_t330_manuel": "48269b939ad1effabec1bc218fbf8b8e2939a7dabb8a08fad1f19baeeb06289a",
     "dell_r720_guide_technique": "2ef98db5274d10aa9cd47f6f6f20f139055fbe49fe4c35dc97cded6de47ac04d",
     "dell_perc9_guide": "e20b9c592ae261283e70d599d9da46e487ff514cdb6c98cdceca3a40efc2cf87",
-    "dell_r730_guide_technique": "61b2092c53b217377f92b18ab11abe024058891c06fa67a7359c4532c8ebb1eb"
+    "dell_r730_guide_technique": "61b2092c53b217377f92b18ab11abe024058891c06fa67a7359c4532c8ebb1eb",
+    "dell_revue_dossier_v1": "3296833e3cb12aa1eefd2a45f1d8bb4fbad60ae6b59fab15fbed5c4a903a122e",
+    "dell_revue_dossier_v2": "4ee7105b76987a50de1ac3f6ceec55fb9d391575454da5fd490e1934e248fe03",
+    "rational_note_suivi_injection_s5": "39d833cbedac0007fde650708ca0d70e404a33971d229e84248d38283ee8cc41"
   },
   "paquet_local": {
     "fichier": "output/L1_MaintiDoc_BELOUANAS.zip",
-    "taille_octets": 78838758,
-    "pdf_sources": 33,
+    "taille_octets": 79047210,
+    "pdf_total": 36,
+    "pdf_fabricants": 33,
+    "pdf_tests_synthetiques": 3,
     "statut": "travail local ; conformité L1 incomplète et droits de remise à établir",
     "structure_quatre_elements": true
   },
-  "archive_corpus_reel": "output/MAINTiDOC_CORPUS_REEL_33_PDF.zip"
+  "archive_corpus_reel": "output/MAINTiDOC_CORPUS_36_PDF_DONT_3_TESTS.zip"
 }

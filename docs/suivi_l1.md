@@ -7,11 +7,16 @@
 | Non retenus | iDRAC7, iDRAC8, Lifecycle Controller : aucun fichier présent |
 | Inventaire | 33 lignes, vingt colonnes, chemins et noms d’origine exacts |
 | Visuels | 25 aperçus PNG de pages de véritables PDF, avec traçabilité |
-| Contenu synthétique actif | Aucun ; ancien lot archivé |
+| Contenu synthétique actif | Trois documents de test S5 ; ancien lot technique synthétique archivé |
 | Relecture humaine | Non attestée ; champs de relecteur vides |
 | Scans sources | Aucun identifié et validé |
-| Contradictions et injection | Exigences encore ouvertes |
+| Contradictions et injection | Deux documents contradictoires et une note piégée préparés ; exécution S5 à venir |
 | Droits | Copyrights conservés ; redistribution générale non établie |
 | Publication | Liens et métadonnées seulement ; les fichiers fabricants restent locaux |
 
 Le rapport est actualisé sur cet état, sans annoncer une conformité complète au L1.
+
+
+## Ajout autorisé P14 - tests S5
+
+Total actif : 36 PDF = 33 publications fabricants inchangées + trois PDF synthétiques de test. `dell_revue_dossier_v1` et `dell_revue_dossier_v2` sont signalés contradictoire ; `rational_note_suivi_injection_s5` est signalé injection. Les trois sont exclus de l’entraînement et de la validation. Voir tests_s5.md et le manifeste du corpus ; aucun résultat d’exécution n’est déclaré.

@@ -39,3 +39,8 @@ Aucune licence ouverte ni autorisation générale de redistribution du lot n’e
 | documents/serveurs/all-products_esuprt_ser_stor_net_esuprt_poweredge_poweredge-r720_reference-guide_en-us.pdf | révision non explicitée dans les premières pages | [Fabricant](https://dl.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprt_poweredge/poweredge-r720_reference-guide_en-us.pdf) |
 | documents/serveurs/all-products_esuprt_ser_stor_net_esuprtl_adapters_poweredge-rc-h830_user's guide_en-us.pdf | Rev. A05 | [Fabricant](https://dl.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprtl_adapters/poweredge-rc-h830_User%27s%20Guide_en-us.pdf) |
 | documents/serveurs/Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf | v1.7 (nom du fichier fabricant) | [Fabricant](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Dell-PowerEdge-R730-and-R730xd-Technical-Guide-v1-7.pdf) |
+
+
+## Trois documents synthétiques S5 ajoutés
+
+Les fichiers dell_revue_dossier_v1.pdf, dell_revue_dossier_v2.pdf et rational_note_suivi_injection_s5.pdf sont des créations originales assistées par Codex (P14), autorisées pour le projet. Ils ne sont pas publiés par Dell ou RATIONAL et ne reproduisent aucune procédure constructeur. Les noms de modèles délimitent les cas fictifs. La charge d’injection p.2 est volontaire, sans donnée sensible réelle. Les usages sont signalés dans l’inventaire.

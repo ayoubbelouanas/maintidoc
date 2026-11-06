@@ -2,7 +2,7 @@
 
 ## Corpus réellement présent
 
-Les 13 PDF Dell sont en anglais : le champ langue vaut en dans leurs treize lignes d’inventaire. Les 20 notices RATIONAL sont décrites avec le français comme langue principale ; MI_2208 est multilingue et sa section française commence p.17. Les PDF sources restent dans leur langue d’origine.
+Les 13 PDF Dell sont en anglais : le champ langue vaut en dans leurs treize lignes d’inventaire. Les 20 notices RATIONAL sont décrites avec le français comme langue principale ; MI_2208 est multilingue et sa section française commence p.17. Les PDF sources restent dans leur langue d’origine. Les trois procédures synthétiques de test S5 sont en français ; le total du corpus est donc de 23 documents en français principal et 13 en anglais.
 
 ## Comportement retenu pour le prototype
 

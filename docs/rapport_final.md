@@ -35,7 +35,7 @@ Permettre à un technicien de poser une question en français avec une photograp
 
 Décision de périmètre
 
-Le projet couvre plusieurs modèles par famille. Le corpus local comporte 33 PDF fabricants : vingt notices RATIONAL et treize documents Dell. Il comprend dix manuels propriétaires Dell, deux guides techniques et un guide RAID PERC 9. Aucun PDF synthétique ne figure dans le corpus actif. Les noms de fichiers téléchargés sont conservés exactement dans l’inventaire.
+Le projet couvre plusieurs modèles par famille. Le corpus local comporte 33 PDF fabricants : vingt notices RATIONAL et treize documents Dell. Il comprend dix manuels propriétaires Dell, deux guides techniques et un guide RAID PERC 9. Trois documents synthétiques de test S5 s’ajoutent à ces sources, portant le total à 36 PDF : une paire contradictoire et une note piégée. Ils ne remplacent aucun manuel fabricant. Les noms de fichiers téléchargés sont conservés exactement dans l’inventaire.
 
 ### État déclaré
 
@@ -131,13 +131,13 @@ Le VLM proposé par le sujet est Qwen2.5-VL-7B-Instruct. Sa faisabilité avec qu
 
 
 
-## 2. Constitution du corpus - Les 33 PDF réellement présents
+## 2. Constitution du corpus - 36 PDF : sources réelles et tests S5
 
 Comptage fondé sur les fichiers locaux et leur contenu, pas sur les liens proposés.
 
 
 
-Les 33 PDF réellement présents
+36 PDF : sources réelles et tests S5
 
 Comptage fondé sur les fichiers locaux et leur contenu, pas sur les liens proposés.
 
@@ -153,9 +153,11 @@ Comptage fondé sur les fichiers locaux et leur contenu, pas sur les liens propo
 
 | PDF réels présents | 20 | 13 | 33 |
 
-| Documents synthétiques actifs | 0 | 0 | 0 |
+| Tests synthétiques S5 | 1 | 2 | 3 |
 
-| PDF avec page illustrée relevée | 12 | 13 | 25 |
+| Total des PDF actifs | 21 | 15 | 36 |
+
+| Aperçus de PDF fabricants | 12 | 13 | 25 |
 
 Langues : les 13 PDF Dell sont en anglais (langue = en dans l’inventaire). Les notices RATIONAL ont le français comme langue principale ; MI_2208 est multilingue avec une section française p.17 à 24. Les sources ne sont pas remplacées par une traduction.
 
@@ -229,7 +231,7 @@ Traçabilité, droits et limites actuelles
 
 Source réelle et assistance IA
 
-Les 33 PDF sont des publications fabricants ; genere_par_ia vaut non pour chaque fichier. L’assistant a aidé à rechercher les sources, contrôler les noms, titres, pages et empreintes, puis produire les métadonnées et les aperçus. Il n’a pas réécrit les manuels. Les prompts historiques sont conservés et les corrections du lot sont tracées dans P10 à P12.
+Les 33 PDF fabricants restent inchangés et genere_par_ia y vaut non. Les trois documents S5 ajoutés sont des créations synthétiques originales, signalées oui et liées au prompt P14. L’assistant a aidé à rechercher les sources, contrôler les noms, titres, pages et empreintes, puis produire les métadonnées et les aperçus. Il n’a pas réécrit les manuels. Les prompts historiques sont conservés et les corrections et ajouts sont tracés dans P10 à P14.
 
 ### Correction du travail antérieur
 
@@ -241,7 +243,7 @@ L’ancien lot principalement synthétique a été rejeté par Ayoub. Il est arc
 
 Droits de réutilisation
 
-Disponibilité publique et licence ouverte sont distinctes. Les PDF portent le copyright RATIONAL ou Dell ; aucune permission générale de redistribution n’est établie pour ce lot. Les fichiers et leurs rendus restent locaux. Le dépôt GitHub ne publie que rapport, liens, inventaires et métadonnées ; il ne redistribue pas les fichiers fabricants. La conformité juridique du corpus remis reste à établir selon l’usage autorisé.
+Disponibilité publique et licence ouverte sont distinctes. Les PDF portent le copyright RATIONAL ou Dell ; aucune permission générale de redistribution n’est établie pour ce lot. Les fichiers et leurs rendus restent locaux. GitHub publie le rapport, les liens et métadonnées, ainsi que les trois PDF de test originaux. Il ne redistribue pas les fichiers fabricants. La conformité juridique du corpus remis reste à établir selon l’usage autorisé.
 
 ### Exigences L1 non encore satisfaites
 
@@ -249,15 +251,17 @@ Exigences L1 non encore satisfaites
 
 | Exigence | État du lot réel actuel |
 
-| 30 à 50 documents, deux familles | 33 PDF présents : volume atteint. |
+| 30 à 50 documents, deux familles | 36 PDF présents : 33 fabricants et trois tests synthétiques. |
 
 | Au moins dix documents avec visuels | 25 pages illustrées repérées et rendues, sur 25 PDF distincts. |
 
 | Deux documents scannés pour OCR | Aucun scan identifié et validé dans ce lot ; ne pas compter les pages blanches ou les aperçus PNG comme des scans. |
 
-| Deux documents contradictoires et une injection | Aucune paire interdocumentaire ni note piégée validée dans le lot actif. Les ambiguïtés de vocabulaire ne suffisent pas à valider ces exigences. |
+| Deux documents contradictoires et une injection | Paire de procédures R720/R720xd v1/v2 : revue toutes les 24 h / tous les 7 jours, dates explicites. Note iCombi Pro : injection p.2. Étiquettes dans l’inventaire ; scénarios S5 préparés, non exécutés. |
 
 | Relecture humaine | Champs verifie_par vides tant qu’Ayoub n’a pas validé chaque document. |
+
+Les trois PDF sont réservés au split test_s5, hors entraînement et validation du reranker. Les attendus sont conservés séparément dans tests_s5/manifest_tests_s5.json ; ils ne doivent pas être transmis au modèle comme réponse à produire.
 
 Le rapport décrit un état réel du corpus, pas une conformité complète à toutes les exigences du L1. Aucune donnée sensible réelle, aucun ticket de production et aucun résultat de performance du prototype ne sont introduits.
 
@@ -363,7 +367,7 @@ Ingestion et métadonnées
 
 | empreinte et extraction | SHA-256 du fichier ; OCR ou texte, avec confiance si disponible |
 
-Une nouvelle version reçoit un identifiant ou une version distincte. Le contenu ancien ne sera pas silencieusement écrasé lors de l’ajout d’une nouvelle version. Les paires de test restent à constituer.
+Une nouvelle version reçoit un identifiant ou une version distincte. Les deux versions fictives du dossier R720/R720xd sont conservées séparément : la v2 remplace la v1 au 01/11/2026. Une question sur une date antérieure doit retrouver la v1. Les PDF de test ne servent pas à l’entraînement.
 
 
 
@@ -387,7 +391,7 @@ Parcours complet
 
 | techniciens_serveurs | Les treize PDF Dell attribués à ce groupe ; pas les documents fours. |
 
-| responsables | Deux familles explicitement partagées. Les futurs documents de sécurité auront des droits distincts. |
+| responsables | Deux familles explicitement partagées. La note de test est accessible au groupe fours pour qu’il puisse rencontrer l’injection ; l’accès aux documents serveurs reste interdit à ce groupe. |
 
 | Groupe absent / inconnu | Refus par défaut ; aucune déduction de droits à partir d’un texte de document. |
 
@@ -469,7 +473,7 @@ Risques et mesures initiales
 
 | Fuite entraînement/test / données | 2 | 3 | Séparer les documents avant génération des triplets du reranker. | Ayoub |
 
-| Délai et relecture / organisation | 3 | 3 | Garder les 33 PDF présents ; traiter les exigences encore ouvertes et réserver la relecture finale. | Ayoub |
+| Délai et relecture / organisation | 3 | 3 | Garder les 33 sources et trois tests ; traiter les exigences ouvertes et réserver la relecture finale. | Ayoub |
 
 Ces scores sont des estimations de cadrage et non des résultats d’expérience. Le suivi de chaque risque sera mis à jour pendant les semaines 2 à 6, avec les incidents rencontrés et la mesure appliquée.
 
@@ -511,7 +515,7 @@ Responsabilités et semaines 2 à 6
 
 Définir en S5 les seuils et jeux de test. Mesurer nDCG@5 et MRR@10 pour le classement, appui documentaire et qualité des réponses françaises issues de sources anglaises. Tester aussi refus intergroupes, injections et absence de ticket non approuvé. Rapporter les résultats même si le fine-tuning n’améliore pas le classement.
 
-Les scans, paires contradictoires et documents piégés restent à constituer et à réserver aux tests. Les ambiguïtés de modèle seront testées avec des sources adéquates. Les images et textes tiers ne sont pas utilisés pour entraîner le modèle vision-langage, qui reste inchangé.
+Les scans sources restent à constituer. Les deux procédures contradictoires et la note piégée sont réservées au test S5 ; leur exécution n’a pas encore eu lieu. Les ambiguïtés de modèle seront testées avec des sources adéquates. Les images et textes tiers ne sont pas utilisés pour entraîner le modèle vision-langage, qui reste inchangé.
 
 
 
@@ -535,13 +539,13 @@ Remise, contrôles et limites déclarées
 
 | README | README.md - membre, objectif, contenu et structure |
 
-| Corpus | L1_MaintiDoc_BELOUANAS_Corpus/ - 33 PDF réels, aperçus PNG, inventaire et traçabilité |
+| Corpus | L1_MaintiDoc_BELOUANAS_Corpus/ - 36 PDF, aperçus PNG, inventaire et scénarios S5 |
 
 ### Contrôles techniques réalisés
 
 Contrôles techniques réalisés
 
-Les contrôles portent sur la bijection entre les 33 PDF et l’inventaire, leurs noms exacts, pages, empreintes, séries, sources et liens vers les aperçus. Le contrôle technique n’efface pas les exigences encore ouvertes : scans, tests spécifiques et droits de redistribution. Le journal détaillé est enregistré dans docs/controle_livraison.json. Ces contrôles ne remplacent pas la relecture humaine.
+Les contrôles portent sur la bijection entre les 36 PDF et l’inventaire, leurs noms exacts, pages, empreintes, séries, sources et liens vers les aperçus. Le contrôle technique n’efface pas les exigences encore ouvertes : scans sources, relecture et droits de redistribution des fabricants. Le journal détaillé est enregistré dans docs/controle_livraison.json. Ces contrôles ne remplacent pas la relecture humaine.
 
 ### Relecture et dépôt
 

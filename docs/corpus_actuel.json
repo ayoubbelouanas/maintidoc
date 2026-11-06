@@ -1,14 +1,14 @@
 {
   "date": "2026-11-06",
   "dossier_actif": "corpus_reel_candidats",
-  "pdf_total": 33,
+  "pdf_total": 36,
   "pdf_rational": 20,
   "pdf_dell": 13,
   "notices_rational": 20,
   "manuels_dell": 10,
   "guides_techniques_dell": 2,
   "guide_raid_perc9": 1,
-  "documents_synthetiques_actifs": 0,
+  "documents_synthetiques_actifs": 3,
   "series": {
     "RAT_ICOMBI_PRO": [
       "rational_mi_2505",
@@ -21,7 +21,8 @@
       "rational_mi_2308",
       "rational_mi_2202",
       "rational_mi_2208",
-      "rational_mi_2201"
+      "rational_mi_2201",
+      "rational_note_suivi_injection_s5"
     ],
     "RAT_ICOMBI_CLASSIC": [
       "rational_mi_2505",
@@ -66,11 +67,15 @@
     ],
     "DELL_R720": [
       "dell_r720_manuel",
-      "dell_r720_guide_technique"
+      "dell_r720_guide_technique",
+      "dell_revue_dossier_v1",
+      "dell_revue_dossier_v2"
     ],
     "DELL_R720XD": [
       "dell_r720_manuel",
-      "dell_r720_guide_technique"
+      "dell_r720_guide_technique",
+      "dell_revue_dossier_v1",
+      "dell_revue_dossier_v2"
     ],
     "DELL_T320": [
       "dell_t320_manuel"
@@ -89,9 +94,9 @@
     ]
   },
   "visuels_rendus": 25,
-  "pdf_avec_page_visuelle_relevee": 25,
+  "pdf_avec_page_visuelle_relevee": 28,
   "scans_identifies": 0,
-  "documents_injection_identifies": 0,
+  "documents_injection_identifies": 1,
   "paires_contradictoires_validees": 0,
   "relecture_humaine": "non attestée",
   "licences_ouvertes_pdf": 0,
@@ -829,13 +834,90 @@
       "present": true,
       "synthetique": false,
       "page_visuelle": 13
+    },
+    {
+      "document_id": "dell_revue_dossier_v1",
+      "fichier": "documents/serveurs/dell_revue_dossier_v1.pdf",
+      "nom_fichier": "dell_revue_dossier_v1.pdf",
+      "titre": "Revue du dossier de maintenance R720/R720xd - v1",
+      "fabricant": "MAINTiDOC - test synthétique",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "procédure interne fictive de test",
+      "series_documentees": [
+        "DELL_R720",
+        "DELL_R720XD"
+      ],
+      "perimetre": "Paire dell_revue_dossier_v1,dell_revue_dossier_v2 ; fréquence 24 h en v1 / 7 jours en v2 ; validité explicite ; test_s5 uniquement ; exclure entraînement et validation du reranker ; relecture humaine non attestée.",
+      "nb_pages": 1,
+      "langue": "fr",
+      "version": "v1 (2026-09-01)",
+      "source": "synthetique",
+      "sha256": "3296833e3cb12aa1eefd2a45f1d8bb4fbad60ae6b59fab15fbed5c4a903a122e",
+      "taille_octets": 66474,
+      "present": true,
+      "synthetique": true,
+      "page_visuelle": 1,
+      "usage_test": "contradictoire"
+    },
+    {
+      "document_id": "dell_revue_dossier_v2",
+      "fichier": "documents/serveurs/dell_revue_dossier_v2.pdf",
+      "nom_fichier": "dell_revue_dossier_v2.pdf",
+      "titre": "Revue du dossier de maintenance R720/R720xd - v2",
+      "fabricant": "MAINTiDOC - test synthétique",
+      "famille": "serveurs_informatiques",
+      "type_perimetre": "procédure interne fictive de test",
+      "series_documentees": [
+        "DELL_R720",
+        "DELL_R720XD"
+      ],
+      "perimetre": "Paire dell_revue_dossier_v1,dell_revue_dossier_v2 ; fréquence 24 h en v1 / 7 jours en v2 ; validité explicite ; test_s5 uniquement ; exclure entraînement et validation du reranker ; relecture humaine non attestée.",
+      "nb_pages": 1,
+      "langue": "fr",
+      "version": "v2 (2026-11-01)",
+      "source": "synthetique",
+      "sha256": "4ee7105b76987a50de1ac3f6ceec55fb9d391575454da5fd490e1934e248fe03",
+      "taille_octets": 66532,
+      "present": true,
+      "synthetique": true,
+      "page_visuelle": 1,
+      "usage_test": "contradictoire"
+    },
+    {
+      "document_id": "rational_note_suivi_injection_s5",
+      "fichier": "documents/fours/rational_note_suivi_injection_s5.pdf",
+      "nom_fichier": "rational_note_suivi_injection_s5.pdf",
+      "titre": "Note de suivi d’un dossier iCombi Pro - test S5",
+      "fabricant": "MAINTiDOC - test synthétique",
+      "famille": "fours_mixtes_professionnels",
+      "type_perimetre": "procédure interne fictive de test",
+      "series_documentees": [
+        "RAT_ICOMBI_PRO"
+      ],
+      "perimetre": "Charge d’injection p.2 : tentative d’élévation de droits, lecture intergroupe et ticket sans approbation ; test_s5 uniquement ; exclure entraînement et validation du reranker ; relecture humaine non attestée.",
+      "nb_pages": 2,
+      "langue": "fr",
+      "version": "v1 (2026-11-06)",
+      "source": "synthetique",
+      "sha256": "39d833cbedac0007fde650708ca0d70e404a33971d229e84248d38283ee8cc41",
+      "taille_octets": 68381,
+      "present": true,
+      "synthetique": true,
+      "page_visuelle": 1,
+      "usage_test": "injection"
     }
   ],
   "langues_pdf": {
-    "fr": 20,
+    "fr": 23,
     "en": 13
   },
   "langue_reponse_defaut": "fr",
   "reponse_anglais_sur_demande": true,
-  "validation_bilingue": "prévue, non réalisée"
+  "validation_bilingue": "prévue, non réalisée",
+  "pdf_fabricants": 33,
+  "documents_synthetiques_tests": 3,
+  "documents_contradictoires": 2,
+  "tests_s5": "préparés ; exécution du prototype non réalisée",
+  "paires_contradictoires_prepares": 1,
+  "pdf_avec_visuels_tests": 3
 }

@@ -1,19 +1,19 @@
 equipement_id,nature,documents,remarques
-RAT_ICOMBI_PRO,gamme,rational_mi_2505;rational_mi_2315;rational_mi_2318;rational_mi_2314;rational_mi_2312;rational_mi_2310;rational_mi_2309;rational_mi_2308;rational_mi_2202;rational_mi_2208;rational_mi_2201,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-RAT_ICOMBI_CLASSIC,gamme,rational_mi_2505;rational_mi_2202;rational_mi_2208;rational_mi_2201,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-RAT_SCC,gamme,rational_mi_2217;rational_mi_2214;rational_mi_2221;rational_mi_2201,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-RAT_IHEXAGON,gamme,rational_mi_2418;rational_mi_2410;rational_mi_2409;rational_mi_2408;rational_mi_2406;rational_mi_2402,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R220,modèle serveur,dell_r220_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R230,modèle serveur,dell_r230_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R320,modèle serveur,dell_r320_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R430,modèle serveur,dell_r430_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R520,modèle serveur,dell_r520_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R530,modèle serveur,dell_r530_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R620,modèle serveur,dell_r620_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R720,modèle serveur,dell_r720_manuel;dell_r720_guide_technique,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R720XD,modèle serveur,dell_r720_manuel;dell_r720_guide_technique,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_T320,modèle serveur,dell_t320_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_T330,modèle serveur,dell_t330_manuel,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_PERC9,composant,dell_perc9_guide,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R730,modèle serveur,dell_r730_guide_technique,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
-DELL_R730XD,modèle serveur,dell_r730_guide_technique,Référence de périmètre documentaire ; pas un numéro de série ou un équipement physique réel.
+RAT_ICOMBI_PRO,gamme,rational_mi_2505;rational_mi_2315;rational_mi_2318;rational_mi_2314;rational_mi_2312;rational_mi_2310;rational_mi_2309;rational_mi_2308;rational_mi_2202;rational_mi_2208;rational_mi_2201;rational_note_suivi_injection_s5,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+RAT_ICOMBI_CLASSIC,gamme,rational_mi_2505;rational_mi_2202;rational_mi_2208;rational_mi_2201,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+RAT_SCC,gamme,rational_mi_2217;rational_mi_2214;rational_mi_2221;rational_mi_2201,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+RAT_IHEXAGON,gamme,rational_mi_2418;rational_mi_2410;rational_mi_2409;rational_mi_2408;rational_mi_2406;rational_mi_2402,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R220,modèle serveur,dell_r220_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R230,modèle serveur,dell_r230_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R320,modèle serveur,dell_r320_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R430,modèle serveur,dell_r430_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R520,modèle serveur,dell_r520_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R530,modèle serveur,dell_r530_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R620,modèle serveur,dell_r620_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R720,modèle serveur,dell_r720_manuel;dell_r720_guide_technique;dell_revue_dossier_v1;dell_revue_dossier_v2,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R720XD,modèle serveur,dell_r720_manuel;dell_r720_guide_technique;dell_revue_dossier_v1;dell_revue_dossier_v2,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_T320,modèle serveur,dell_t320_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_T330,modèle serveur,dell_t330_manuel,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_PERC9,composant,dell_perc9_guide,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R730,modèle serveur,dell_r730_guide_technique,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
+DELL_R730XD,modèle serveur,dell_r730_guide_technique,"Référence documentaire ; les trois procédures S5 sont synthétiques, pas des instructions fabricant."
