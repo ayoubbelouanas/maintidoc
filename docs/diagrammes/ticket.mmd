@@ -1,0 +1,14 @@
+flowchart TD
+    D[Demande de ticket autorisée] --> B[Préparer équipement, titre et description]
+    B --> SHOW[Afficher le contenu exact à l'utilisateur]
+    SHOW --> OK{Approbation explicite ?}
+    OK -->|Non| WAIT[Attendre ou annuler]
+    OK -->|Oui| LINK[Lier approbation à l'utilisateur et au contenu]
+    LINK --> MOD{Contenu modifié depuis approbation ?}
+    MOD -->|Oui| SHOW
+    MOD -->|Non| CALL[Appel MCP avec approbation et clé d'idempotence]
+    CALL --> AUTH{Serveur : droits et approbation valides ?}
+    AUTH -->|Non| REF[Refuser la création]
+    AUTH -->|Oui| EXISTS{Clé déjà traitée pour cette opération ?}
+    EXISTS -->|Oui| OLD[Renvoyer le ticket existant]
+    EXISTS -->|Non| CREATE[Créer une fois et enregistrer clé et résultat]

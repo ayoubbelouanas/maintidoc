@@ -1,0 +1,12 @@
+flowchart LR
+    D[Document relu et ligne d'inventaire] --> META[Contrôle identifiant, version, provenance et groupes]
+    META --> ORIG[Conserver l'original]
+    META --> SCAN{Scan sans texte exploitable ?}
+    SCAN -->|Oui| OCR[OCR local]
+    SCAN -->|Non| EXT[Extraction texte et images]
+    OCR --> EXT
+    EXT --> CH[Découpage en passages, tableaux et figures]
+    CH --> M[Ajouter document, version, page, élément, équipement et accès]
+    M --> E[Embeddings textuels et visuels]
+    E --> IDX[Index conservant les groupes d'accès]
+    M --> DB[Stockage des métadonnées]

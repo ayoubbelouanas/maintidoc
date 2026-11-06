@@ -1,0 +1,26 @@
+flowchart TB
+    U[Utilisateur fictif] -->|Question et image| UI[Interface]
+    UI -->|Requête et identité| API[API : contrôle identité et droits]
+    API -->|Demande autorisée et groupes| O[Orchestration]
+    O -->|Question, image et preuves| VLM[Modèle vision-langage]
+    VLM -->|Observations, réponse proposée, incertitudes| O
+    O -->|Recherche filtrée par groupes| R[Recherche texte et images]
+    R -->|Candidats autorisés| RR[Reranking textuel]
+    RR -->|Passages et figures classés| O
+    C[Corpus et inventaire relus] -->|Documents et métadonnées| ING[Ingestion et OCR éventuel]
+    ING -->|Représentations et permissions| IDX[Index de recherche]
+    ING -->|Originaux et métadonnées| S[Stockage]
+    R -->|Requête filtrée| IDX
+    IDX -->|Éléments autorisés| R
+    O -->|Historique ou tickets : identité et équipement| MCP[Serveur MCP : contrôle des autorisations]
+    MCP <-->|Données fictives de maintenance| S
+    MCP -->|Résultats autorisés| O
+    O -->|Réponse et preuves récupérées| VAL[Vérification des citations et du format]
+    VAL -->|Réponse sourcée ou clarification| UI
+    UI -->|Ouverture d'une source| ACC[Contrôle des droits sur le document ou l'image]
+    ACC -->|Accès autorisé| S
+    O -->|Brouillon du ticket| UI
+    UI -->|Approbation du contenu exact| API
+    API -->|Identité, contenu et approbation| MCP
+    MCP -->|Vérifier approbation et idempotence| CREATE[Création du ticket]
+    CREATE -->|Ticket et clé d'idempotence| S

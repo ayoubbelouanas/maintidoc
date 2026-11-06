@@ -1,0 +1,16 @@
+flowchart TD
+    Q[Question et photographie] --> A{Identité et droits valides ?}
+    A -->|Non| REF[Refus]
+    A -->|Oui| V[Analyse visuelle]
+    V --> ID{Équipement suffisamment identifié ?}
+    ID -->|Non| CL[Demande de précision]
+    ID -->|Oui| R[Recherche textuelle et visuelle filtrée par groupes]
+    R --> RR[Fusion et reranking des preuves autorisées]
+    RR --> M{Historique ou tickets nécessaires ?}
+    M -->|Oui| MCP[Appel MCP avec contrôle des droits côté serveur]
+    MCP --> P[Préparation de la réponse avec preuves]
+    M -->|Non| P
+    P --> C{Sources suffisantes, citations existantes et appuyées ?}
+    C -->|Non| LIM[Clarification ou limite expliquée]
+    C -->|Oui| OUT[Réponse sourcée]
+    OUT --> OPEN[Ouverture des sources après contrôle d'accès]
