@@ -39,7 +39,17 @@ J’ai conservé les noms et le contenu des 33 PDF d’origine. Les 25 PNG sont 
 
 J’utilise le corpus pour un projet académique non commercial, en conservant les documents et leurs mentions de copyright. Les [conditions Dell](https://www.dell.com/fr-fr/legal/lp/site-terms-of-use) permettent l’usage personnel non commercial sous réserve de préserver le contenu et les mentions de propriété. Les [mentions légales RATIONAL](https://portal.rational-online.com/fs4p/fr/footernavigation/impressum/impressum.php) exigent une autorisation expresse pour la reproduction dans d’autres publications. Je distingue l’usage pédagogique de la republication publique, sans assimiler ces documents à une licence ouverte.
 
-## Accès prévu
+## Authentification prévue
+
+Je vais mettre en place une authentification obligatoire pour accéder à la plateforme, avec plusieurs types de comptes :
+
+- **Technicien Dell** : accès aux documents et fonctions liés aux serveurs, groupe `techniciens_serveurs`.
+- **Technicien RATIONAL** : accès aux documents et fonctions liés aux fours, groupe `techniciens_fours`.
+- **Responsable maintenance** : accès aux deux familles, groupe `responsables`.
+
+Je vérifierai les droits côté serveur avant chaque recherche, ouverture de source et appel MCP. Les rôles seront attribués au compte ; une question ou un document ne pourra pas modifier les permissions. L’authentification reste à développer.
+
+## Accès documentaire prévu
 
 - `techniciens_fours` : 20 PDF RATIONAL ;
 - `techniciens_serveurs` : 13 PDF Dell ;
